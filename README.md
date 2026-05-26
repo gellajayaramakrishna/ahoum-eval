@@ -278,6 +278,9 @@ PROMPT_LOG.md
 
 ---
 
+<img width="1710" height="1107" alt="Screenshot 2026-05-26 at 11 18 40" src="https://github.com/user-attachments/assets/9bf4d514-5f48-475b-8f39-165be344b82c" />
+
+
 # Author
 
 **Gella Jaya Rama Krishna**  
