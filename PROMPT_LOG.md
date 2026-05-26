@@ -55,7 +55,7 @@ was used to accelerate generation of dialogue variations for those scenarios.
 
 ---
 
-## 5. Gradio UI
+## 5. Flask UI
 **What I designed and implemented:** Designed the evaluation flow, 
 two-column layout, and user interaction model.  
 **AI assistance:** Used AI assistance for Flask routing boilerplate 
