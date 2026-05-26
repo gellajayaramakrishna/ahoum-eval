@@ -277,8 +277,11 @@ PROMPT_LOG.md
 | Parameter Size | 8B |
 
 ---
-
-<img width="1710" height="1107" alt="Screenshot 2026-05-26 at 11 18 40" src="https://github.com/user-attachments/assets/9bf4d514-5f48-475b-8f39-165be344b82c" />
+# UI Screenshots
+**Input View** — Paste any conversation to evaluate:
+<img width="1375" height="816" alt="Screenshot 2026-05-26 at 15 42 20" src="https://github.com/user-attachments/assets/c6aa78b9-583c-4512-a49a-f9e5696abc54" />
+**Results View** — Scores and confidence per facet:
+<img width="1374" height="807" alt="Screenshot 2026-05-26 at 15 42 43" src="https://github.com/user-attachments/assets/64784a67-f8c6-4346-9021-8466b636ba42" />
 
 
 # Author
