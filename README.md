@@ -89,3 +89,8 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 Edit `.env` and add your Groq API key:
+
+## Limitations
+- LLM scoring has slight non-determinism (~2-3% variance) even at temperature=0 
+  due to floating point differences. For production, scores should be averaged 
+  over 3 runs or cached after first evaluation.

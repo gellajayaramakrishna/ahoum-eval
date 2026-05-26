@@ -19,7 +19,7 @@ def score_conversation(conversation_text, facets, batch_size=30):
         scores = score_batch_with_retry(conversation_text, batch)
         all_scores.update(scores)
 
-        time.sleep(8)
+        time.sleep(12)
 
     return all_scores
 
@@ -30,7 +30,7 @@ def score_batch_with_retry(conversation_text, facets_batch, max_retries=3):
             return score_batch(conversation_text, facets_batch)
         except Exception as e:
             if "429" in str(e):
-                wait = 15 * (attempt + 1)
+                wait = 30 * (attempt + 1)
                 print(f"    Rate limited. Waiting {wait}s before retry...")
                 time.sleep(wait)
             else:
