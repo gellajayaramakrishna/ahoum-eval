@@ -70,7 +70,7 @@ Format:
                 "content": prompt
             }
         ],
-        temperature=0.1,
+        temperature=0,
         max_tokens=2000,
     )
 
