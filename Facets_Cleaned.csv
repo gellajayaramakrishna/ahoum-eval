@@ -1,0 +1,400 @@
+Facets,Facets_Clean,Category,Score_Min,Score_Max,Description
+Risktaking,Risktaking,Risk,1,5,Measures the degree of 'Risktaking' expressed in the conversation
+Naivety,Naivety,General,1,5,Measures the degree of 'Naivety' expressed in the conversation
+Acidity,Acidity,General,1,5,Measures the degree of 'Acidity' expressed in the conversation
+Democratic Leadership:,Democratic Leadership:,Leadership,1,5,Measures the degree of 'Democratic Leadership:' expressed in the conversation
+Common-sense,Common-sense,Cognitive,1,5,Measures the degree of 'Common-sense' expressed in the conversation
+Hesitation,Hesitation,General,1,5,Measures the degree of 'Hesitation' expressed in the conversation
+Discontentment,Discontentment,General,1,5,Measures the degree of 'Discontentment' expressed in the conversation
+Overprotectiveness,Overprotectiveness,General,1,5,Measures the degree of 'Overprotectiveness' expressed in the conversation
+Merriness,Merriness,General,1,5,Measures the degree of 'Merriness' expressed in the conversation
+Emotionalism,Emotionalism,Emotional,1,5,Measures the degree of 'Emotionalism' expressed in the conversation
+Self-improvement,Self-improvement,General,1,5,Measures the degree of 'Self-improvement' expressed in the conversation
+Statistical Reasoning,Statistical Reasoning,Cognitive,1,5,Measures the degree of 'Statistical Reasoning' expressed in the conversation
+Assertiveness and control in relationships,Assertiveness and control in relationships,Leadership,1,5,Measures the degree of 'Assertiveness and control in relationships' expressed in the conversation
+Cunningness,Cunningness,General,1,5,Measures the degree of 'Cunningness' expressed in the conversation
+Adventure-Seeking Behavior,Adventure-Seeking Behavior,Risk,1,5,Measures the degree of 'Adventure-Seeking Behavior' expressed in the conversation
+Compassion Fatigue,Compassion Fatigue,Social,1,5,Measures the degree of 'Compassion Fatigue' expressed in the conversation
+Moroseness,Moroseness,General,1,5,Measures the degree of 'Moroseness' expressed in the conversation
+Specialist,Specialist,General,1,5,Measures the degree of 'Specialist' expressed in the conversation
+Aloofness,Aloofness,General,1,5,Measures the degree of 'Aloofness' expressed in the conversation
+Genuine,Genuine,General,1,5,Measures the degree of 'Genuine' expressed in the conversation
+Determinedness,Determinedness,General,1,5,Measures the degree of 'Determinedness' expressed in the conversation
+HonestyHumility:,HonestyHumility:,Moral,1,5,Measures the degree of 'HonestyHumility:' expressed in the conversation
+Relationship Building Themes:,Relationship Building Themes:,Social,1,5,Measures the degree of 'Relationship Building Themes:' expressed in the conversation
+Pure Challenge,Pure Challenge,General,1,5,Measures the degree of 'Pure Challenge' expressed in the conversation
+Numerical Reasoning Subcomponents:,Numerical Reasoning Subcomponents:,Cognitive,1,5,Measures the degree of 'Numerical Reasoning Subcomponents:' expressed in the conversation
+Openness,Openness,General,1,5,Measures the degree of 'Openness' expressed in the conversation
+SelfEsteem,SelfEsteem,General,1,5,Measures the degree of 'SelfEsteem' expressed in the conversation
+Comparing alphanumeric data,Comparing alphanumeric data,General,1,5,Measures the degree of 'Comparing alphanumeric data' expressed in the conversation
+Big-heartedness,Big-heartedness,General,1,5,Measures the degree of 'Big-heartedness' expressed in the conversation
+Compulsive activities,Compulsive activities,General,1,5,Measures the degree of 'Compulsive activities' expressed in the conversation
+Disrespect,Disrespect,General,1,5,Measures the degree of 'Disrespect' expressed in the conversation
+FSH level,FSH level,General,1,5,Measures the degree of 'FSH level' expressed in the conversation
+Self Perspective,Self Perspective,General,1,5,Measures the degree of 'Self Perspective' expressed in the conversation
+Desperation,Desperation,General,1,5,Measures the degree of 'Desperation' expressed in the conversation
+Affiliation Motivation:,Affiliation Motivation:,General,1,5,Measures the degree of 'Affiliation Motivation:' expressed in the conversation
+Anatomy knowledge,Anatomy knowledge,General,1,5,Measures the degree of 'Anatomy knowledge' expressed in the conversation
+Passive-Aggressive,Passive-Aggressive,General,1,5,Measures the degree of 'Passive-Aggressive' expressed in the conversation
+Presence of Spiritual Pain,Presence of Spiritual Pain,Spiritual,1,5,Measures the degree of 'Presence of Spiritual Pain' expressed in the conversation
+Role of Spirituality in Community Involvement,Role of Spirituality in Community Involvement,Spiritual,1,5,Measures the degree of 'Role of Spirituality in Community Involvement' expressed in the conversation
+Structure,Structure,General,1,5,Measures the degree of 'Structure' expressed in the conversation
+Eco-tourism trips,Eco-tourism trips,General,1,5,Measures the degree of 'Eco-tourism trips' expressed in the conversation
+Chivalrousness,Chivalrousness,General,1,5,Measures the degree of 'Chivalrousness' expressed in the conversation
+Pilgrimage participation count,Pilgrimage participation count,General,1,5,Measures the degree of 'Pilgrimage participation count' expressed in the conversation
+Mindfulness facet: Observing,Mindfulness facet: Observing,General,1,5,Measures the degree of 'Mindfulness facet: Observing' expressed in the conversation
+Submissiveness,Submissiveness,General,1,5,Measures the degree of 'Submissiveness' expressed in the conversation
+Training-cycle length,Training-cycle length,General,1,5,Measures the degree of 'Training-cycle length' expressed in the conversation
+Sensitiveness,Sensitiveness,General,1,5,Measures the degree of 'Sensitiveness' expressed in the conversation
+Negative Affect Frequency,Negative Affect Frequency,General,1,5,Measures the degree of 'Negative Affect Frequency' expressed in the conversation
+Innovation and Creativity Components:,Innovation and Creativity Components:,General,1,5,Measures the degree of 'Innovation and Creativity Components:' expressed in the conversation
+Achievement Motivation:,Achievement Motivation:,General,1,5,Measures the degree of 'Achievement Motivation:' expressed in the conversation
+Feedback-giving frequency,Feedback-giving frequency,General,1,5,Measures the degree of 'Feedback-giving frequency' expressed in the conversation
+Dance-cardio sessions,Dance-cardio sessions,General,1,5,Measures the degree of 'Dance-cardio sessions' expressed in the conversation
+Enthusiasm,Enthusiasm,General,1,5,Measures the degree of 'Enthusiasm' expressed in the conversation
+Psychological construct: Social Desirability tendency,Psychological construct: Social Desirability tendency,Cognitive,1,5,Measures the degree of 'Psychological construct: Social Desirability tendency' expressed in the conversation
+Inattentiveness,Inattentiveness,General,1,5,Measures the degree of 'Inattentiveness' expressed in the conversation
+Unassertiveness,Unassertiveness,Leadership,1,5,Measures the degree of 'Unassertiveness' expressed in the conversation
+Decision-making decisiveness,Decision-making decisiveness,General,1,5,Measures the degree of 'Decision-making decisiveness' expressed in the conversation
+Sense-of-coherence score,Sense-of-coherence score,General,1,5,Measures the degree of 'Sense-of-coherence score' expressed in the conversation
+Justice-mindedness,Justice-mindedness,General,1,5,Measures the degree of 'Justice-mindedness' expressed in the conversation
+Subscription count,Subscription count,General,1,5,Measures the degree of 'Subscription count' expressed in the conversation
+Depression Symptoms,Depression Symptoms,General,1,5,Measures the degree of 'Depression Symptoms' expressed in the conversation
+Spatial perception,Spatial perception,General,1,5,Measures the degree of 'Spatial perception' expressed in the conversation
+Brevity,Brevity,General,1,5,Measures the degree of 'Brevity' expressed in the conversation
+Orderliness,Orderliness,General,1,5,Measures the degree of 'Orderliness' expressed in the conversation
+Multiculturalism,Multiculturalism,General,1,5,Measures the degree of 'Multiculturalism' expressed in the conversation
+Creative risk-taking tendency,Creative risk-taking tendency,Risk,1,5,Measures the degree of 'Creative risk-taking tendency' expressed in the conversation
+Inefficiency,Inefficiency,General,1,5,Measures the degree of 'Inefficiency' expressed in the conversation
+Network basics,Network basics,General,1,5,Measures the degree of 'Network basics' expressed in the conversation
+Alphabetical filing skills,Alphabetical filing skills,General,1,5,Measures the degree of 'Alphabetical filing skills' expressed in the conversation
+Work Styles,Work Styles,General,1,5,Measures the degree of 'Work Styles' expressed in the conversation
+Character strength: Perseverance,Character strength: Perseverance,General,1,5,Measures the degree of 'Character strength: Perseverance' expressed in the conversation
+Competition,Competition,General,1,5,Measures the degree of 'Competition' expressed in the conversation
+Logical Sequence Identification,Logical Sequence Identification,Cognitive,1,5,Measures the degree of 'Logical Sequence Identification' expressed in the conversation
+Sustainable-transport usage,Sustainable-transport usage,General,1,5,Measures the degree of 'Sustainable-transport usage' expressed in the conversation
+Hardworking,Hardworking,General,1,5,Measures the degree of 'Hardworking' expressed in the conversation
+Emotional-intelligence measure: Impulsiveness,Emotional-intelligence measure: Impulsiveness,Emotional,1,5,Measures the degree of 'Emotional-intelligence measure: Impulsiveness' expressed in the conversation
+Dishonesty,Dishonesty,Moral,1,5,Measures the degree of 'Dishonesty' expressed in the conversation
+Preferred epistemology,Preferred epistemology,General,1,5,Measures the degree of 'Preferred epistemology' expressed in the conversation
+Memory for Sounds,Memory for Sounds,General,1,5,Measures the degree of 'Memory for Sounds' expressed in the conversation
+Sportsmanship rating,Sportsmanship rating,General,1,5,Measures the degree of 'Sportsmanship rating' expressed in the conversation
+Immaturity,Immaturity,General,1,5,Measures the degree of 'Immaturity' expressed in the conversation
+Health-literacy level,Health-literacy level,Lifestyle,1,5,Measures the degree of 'Health-literacy level' expressed in the conversation
+Estimating Calculations,Estimating Calculations,General,1,5,Measures the degree of 'Estimating Calculations' expressed in the conversation
+Depression: Feelings of sadness and hopelessness,Depression: Feelings of sadness and hopelessness,General,1,5,Measures the degree of 'Depression: Feelings of sadness and hopelessness' expressed in the conversation
+Synthesis of information,Synthesis of information,General,1,5,Measures the degree of 'Synthesis of information' expressed in the conversation
+Leadership Potential:,Leadership Potential:,Leadership,1,5,Measures the degree of 'Leadership Potential:' expressed in the conversation
+Ethical standards,Ethical standards,Moral,1,5,Measures the degree of 'Ethical standards' expressed in the conversation
+High-spiritedness,High-spiritedness,General,1,5,Measures the degree of 'High-spiritedness' expressed in the conversation
+Critical reasoning,Critical reasoning,Cognitive,1,5,Measures the degree of 'Critical reasoning' expressed in the conversation
+Sleep-disorder diagnosis,Sleep-disorder diagnosis,Lifestyle,1,5,Measures the degree of 'Sleep-disorder diagnosis' expressed in the conversation
+Listening Skills Subcomponents:,Listening Skills Subcomponents:,General,1,5,Measures the degree of 'Listening Skills Subcomponents:' expressed in the conversation
+Collaboration,Collaboration,General,1,5,Measures the degree of 'Collaboration' expressed in the conversation
+Precision of Movements,Precision of Movements,General,1,5,Measures the degree of 'Precision of Movements' expressed in the conversation
+Social Boldness,Social Boldness,Social,1,5,Measures the degree of 'Social Boldness' expressed in the conversation
+Auditory memory,Auditory memory,General,1,5,Measures the degree of 'Auditory memory' expressed in the conversation
+Psychomotor Ability Subcomponents:,Psychomotor Ability Subcomponents:,General,1,5,Measures the degree of 'Psychomotor Ability Subcomponents:' expressed in the conversation
+Organized lifestyle,Organized lifestyle,General,1,5,Measures the degree of 'Organized lifestyle' expressed in the conversation
+Skill-endorsements count,Skill-endorsements count,General,1,5,Measures the degree of 'Skill-endorsements count' expressed in the conversation
+Mysteriousness,Mysteriousness,General,1,5,Measures the degree of 'Mysteriousness' expressed in the conversation
+Cultural Identity,Cultural Identity,General,1,5,Measures the degree of 'Cultural Identity' expressed in the conversation
+Intrinsic Motivation,Intrinsic Motivation,General,1,5,Measures the degree of 'Intrinsic Motivation' expressed in the conversation
+Impartial-mindedness,Impartial-mindedness,General,1,5,Measures the degree of 'Impartial-mindedness' expressed in the conversation
+Burnout Symptoms,Burnout Symptoms,General,1,5,Measures the degree of 'Burnout Symptoms' expressed in the conversation
+Holiness,Holiness,General,1,5,Measures the degree of 'Holiness' expressed in the conversation
+Selfcontrol,Selfcontrol,General,1,5,Measures the degree of 'Selfcontrol' expressed in the conversation
+SelfDirectedness,SelfDirectedness,General,1,5,Measures the degree of 'SelfDirectedness' expressed in the conversation
+Encouraging participation,Encouraging participation,General,1,5,Measures the degree of 'Encouraging participation' expressed in the conversation
+Impracticalness,Impracticalness,General,1,5,Measures the degree of 'Impracticalness' expressed in the conversation
+Meeting Deadlines,Meeting Deadlines,General,1,5,Measures the degree of 'Meeting Deadlines' expressed in the conversation
+Data Analysis,Data Analysis,General,1,5,Measures the degree of 'Data Analysis' expressed in the conversation
+Social Interaction Skills,Social Interaction Skills,Social,1,5,Measures the degree of 'Social Interaction Skills' expressed in the conversation
+Psychoticism,Psychoticism,General,1,5,Measures the degree of 'Psychoticism' expressed in the conversation
+Ethical leadership rating,Ethical leadership rating,Leadership,1,5,Measures the degree of 'Ethical leadership rating' expressed in the conversation
+Slothfulness,Slothfulness,General,1,5,Measures the degree of 'Slothfulness' expressed in the conversation
+Happiness,Happiness,General,1,5,Measures the degree of 'Happiness' expressed in the conversation
+Contentment Levels,Contentment Levels,General,1,5,Measures the degree of 'Contentment Levels' expressed in the conversation
+Neuroticism,Neuroticism,General,1,5,Measures the degree of 'Neuroticism' expressed in the conversation
+Desire for excellence,Desire for excellence,General,1,5,Measures the degree of 'Desire for excellence' expressed in the conversation
+Perceiving,Perceiving,General,1,5,Measures the degree of 'Perceiving' expressed in the conversation
+Liberalism,Liberalism,General,1,5,Measures the degree of 'Liberalism' expressed in the conversation
+Inversion comfort level,Inversion comfort level,General,1,5,Measures the degree of 'Inversion comfort level' expressed in the conversation
+Affection,Affection,General,1,5,Measures the degree of 'Affection' expressed in the conversation
+Numeric Filing Skills,Numeric Filing Skills,General,1,5,Measures the degree of 'Numeric Filing Skills' expressed in the conversation
+Martyrdom,Martyrdom,General,1,5,Measures the degree of 'Martyrdom' expressed in the conversation
+Parathyroid-hormone level,Parathyroid-hormone level,General,1,5,Measures the degree of 'Parathyroid-hormone level' expressed in the conversation
+Seeking approval,Seeking approval,General,1,5,Measures the degree of 'Seeking approval' expressed in the conversation
+Judging (J):,Judging (J):,General,1,5,Measures the degree of 'Judging (J):' expressed in the conversation
+Big Five facet Openness – Artistic Interests,Big Five facet Openness – Artistic Interests,General,1,5,Measures the degree of 'Big Five facet Openness – Artistic Interests' expressed in the conversation
+Psychological construct: Operant-Learning rate,Psychological construct: Operant-Learning rate,Cognitive,1,5,Measures the degree of 'Psychological construct: Operant-Learning rate' expressed in the conversation
+Psychological construct: Need for Achievement level,Psychological construct: Need for Achievement level,Cognitive,1,5,Measures the degree of 'Psychological construct: Need for Achievement level' expressed in the conversation
+Cantankerousness,Cantankerousness,General,1,5,Measures the degree of 'Cantankerousness' expressed in the conversation
+Material properties knowledge,Material properties knowledge,General,1,5,Measures the degree of 'Material properties knowledge' expressed in the conversation
+Hostility,Hostility,General,1,5,Measures the degree of 'Hostility' expressed in the conversation
+Independence,Independence,General,1,5,Measures the degree of 'Independence' expressed in the conversation
+800. Sufi practice: Sufi retreat attendance count,Sufi practice: Sufi retreat attendance count,Spiritual,1,5,Measures the degree of 'Sufi practice: Sufi retreat attendance count' expressed in the conversation
+Chromatin-accessibility score,Chromatin-accessibility score,General,1,5,Measures the degree of 'Chromatin-accessibility score' expressed in the conversation
+644. Spiritual virtue: Humility practice index,Spiritual virtue: Humility practice index,Spiritual,1,5,Measures the degree of 'Spiritual virtue: Humility practice index' expressed in the conversation
+754. I Ching hexagram 36 resonance level,I Ching hexagram 36 resonance level,General,1,5,Measures the degree of 'I Ching hexagram 36 resonance level' expressed in the conversation
+Well-being component: Engagement,Well-being component: Engagement,General,1,5,Measures the degree of 'Well-being component: Engagement' expressed in the conversation
+Need for social interaction,Need for social interaction,Social,1,5,Measures the degree of 'Need for social interaction' expressed in the conversation
+Peer-collaboration hours,Peer-collaboration hours,General,1,5,Measures the degree of 'Peer-collaboration hours' expressed in the conversation
+Arts and Humanities,Arts and Humanities,General,1,5,Measures the degree of 'Arts and Humanities' expressed in the conversation
+596. Religious practice: Quran khatam cycles per year,Religious practice: Quran khatam cycles per year,Spiritual,1,5,Measures the degree of 'Religious practice: Quran khatam cycles per year' expressed in the conversation
+926. Bahá’í spiritual metric: Ridván festival participation,Bahá’í spiritual metric: Ridván festival participation,Spiritual,1,5,Measures the degree of 'Bahá’í spiritual metric: Ridván festival participation' expressed in the conversation
+Compassion,Compassion,Social,1,5,Measures the degree of 'Compassion' expressed in the conversation
+Information Retention,Information Retention,General,1,5,Measures the degree of 'Information Retention' expressed in the conversation
+Eye-contact duration,Eye-contact duration,General,1,5,Measures the degree of 'Eye-contact duration' expressed in the conversation
+Self-righteousness,Self-righteousness,General,1,5,Measures the degree of 'Self-righteousness' expressed in the conversation
+General Mood and Attitude,General Mood and Attitude,General,1,5,Measures the degree of 'General Mood and Attitude' expressed in the conversation
+Serotonin transporter availability,Serotonin transporter availability,General,1,5,Measures the degree of 'Serotonin transporter availability' expressed in the conversation
+Contribution to Group Goals,Contribution to Group Goals,General,1,5,Measures the degree of 'Contribution to Group Goals' expressed in the conversation
+Dignity,Dignity,General,1,5,Measures the degree of 'Dignity' expressed in the conversation
+HEXACO Personality Inventory Facets:,HEXACO Personality Inventory Facets:,General,1,5,Measures the degree of 'HEXACO Personality Inventory Facets:' expressed in the conversation
+Evaluating Solutions,Evaluating Solutions,General,1,5,Measures the degree of 'Evaluating Solutions' expressed in the conversation
+Input,Input,General,1,5,Measures the degree of 'Input' expressed in the conversation
+Discreteness,Discreteness,General,1,5,Measures the degree of 'Discreteness' expressed in the conversation
+607. Energy-healing practice: Reiki sessions / year,Energy-healing practice: Reiki sessions / year,General,1,5,Measures the degree of 'Energy-healing practice: Reiki sessions / year' expressed in the conversation
+692. Astrology: Rising sign is Scorpio,Astrology: Rising sign is Scorpio,General,1,5,Measures the degree of 'Astrology: Rising sign is Scorpio' expressed in the conversation
+Character strength: Social Intelligence,Character strength: Social Intelligence,Social,1,5,Measures the degree of 'Character strength: Social Intelligence' expressed in the conversation
+Bravery,Bravery,General,1,5,Measures the degree of 'Bravery' expressed in the conversation
+Childhood Experiences,Childhood Experiences,General,1,5,Measures the degree of 'Childhood Experiences' expressed in the conversation
+Data-sharing consent level,Data-sharing consent level,General,1,5,Measures the degree of 'Data-sharing consent level' expressed in the conversation
+Vision-check frequency,Vision-check frequency,General,1,5,Measures the degree of 'Vision-check frequency' expressed in the conversation
+Physical-violence exposure,Physical-violence exposure,General,1,5,Measures the degree of 'Physical-violence exposure' expressed in the conversation
+Macronutrient ratio: fat,Macronutrient ratio: fat,General,1,5,Measures the degree of 'Macronutrient ratio: fat' expressed in the conversation
+Cooking and Culinary Arts,Cooking and Culinary Arts,General,1,5,Measures the degree of 'Cooking and Culinary Arts' expressed in the conversation
+Language use,Language use,General,1,5,Measures the degree of 'Language use' expressed in the conversation
+Dance-style mastery diversity,Dance-style mastery diversity,General,1,5,Measures the degree of 'Dance-style mastery diversity' expressed in the conversation
+Satya Adherence,Satya Adherence,General,1,5,Measures the degree of 'Satya Adherence' expressed in the conversation
+Ethnocentrism,Ethnocentrism,General,1,5,Measures the degree of 'Ethnocentrism' expressed in the conversation
+Emotional Boundaries,Emotional Boundaries,Emotional,1,5,Measures the degree of 'Emotional Boundaries' expressed in the conversation
+Creativity in solutions,Creativity in solutions,General,1,5,Measures the degree of 'Creativity in solutions' expressed in the conversation
+Psychological construct: Hope scale,Psychological construct: Hope scale,Cognitive,1,5,Measures the degree of 'Psychological construct: Hope scale' expressed in the conversation
+565. Practice frequency: Walking meditation,Practice frequency: Walking meditation,Spiritual,1,5,Measures the degree of 'Practice frequency: Walking meditation' expressed in the conversation
+Depression (DEP),Depression (DEP),General,1,5,Measures the degree of 'Depression (DEP)' expressed in the conversation
+Understanding Mathematical Concepts,Understanding Mathematical Concepts,General,1,5,Measures the degree of 'Understanding Mathematical Concepts' expressed in the conversation
+Hypomania (Ma),Hypomania (Ma),General,1,5,Measures the degree of 'Hypomania (Ma)' expressed in the conversation
+Goal-Directed Behavior,Goal-Directed Behavior,General,1,5,Measures the degree of 'Goal-Directed Behavior' expressed in the conversation
+Depth of Emotional Connections,Depth of Emotional Connections,Emotional,1,5,Measures the degree of 'Depth of Emotional Connections' expressed in the conversation
+Binding foundations index,Binding foundations index,General,1,5,Measures the degree of 'Binding foundations index' expressed in the conversation
+Ego Dissolution Frequency,Ego Dissolution Frequency,General,1,5,Measures the degree of 'Ego Dissolution Frequency' expressed in the conversation
+Activator: Turning thoughts into action,Activator: Turning thoughts into action,General,1,5,Measures the degree of 'Activator: Turning thoughts into action' expressed in the conversation
+967. Gnostic spiritual metric: Archon meditation frequency,Gnostic spiritual metric: Archon meditation frequency,Spiritual,1,5,Measures the degree of 'Gnostic spiritual metric: Archon meditation frequency' expressed in the conversation
+Exemplariness,Exemplariness,General,1,5,Measures the degree of 'Exemplariness' expressed in the conversation
+Moral and Ethical Parameters:,Moral and Ethical Parameters:,Moral,1,5,Measures the degree of 'Moral and Ethical Parameters:' expressed in the conversation
+Submission:,Submission:,General,1,5,Measures the degree of 'Submission:' expressed in the conversation
+Frankness,Frankness,General,1,5,Measures the degree of 'Frankness' expressed in the conversation
+Psychological construct: Psychological Safety climate,Psychological construct: Psychological Safety climate,Cognitive,1,5,Measures the degree of 'Psychological construct: Psychological Safety climate' expressed in the conversation
+Psychological construct: Self-Compassion total,Psychological construct: Self-Compassion total,Cognitive,1,5,Measures the degree of 'Psychological construct: Self-Compassion total' expressed in the conversation
+Psychological construct: Executive-Function composite,Psychological construct: Executive-Function composite,Cognitive,1,5,Measures the degree of 'Psychological construct: Executive-Function composite' expressed in the conversation
+Rebelliousness,Rebelliousness,General,1,5,Measures the degree of 'Rebelliousness' expressed in the conversation
+Volunteer Work,Volunteer Work,General,1,5,Measures the degree of 'Volunteer Work' expressed in the conversation
+Intellect,Intellect,Cognitive,1,5,Measures the degree of 'Intellect' expressed in the conversation
+Use of Mathematical Formulas,Use of Mathematical Formulas,General,1,5,Measures the degree of 'Use of Mathematical Formulas' expressed in the conversation
+Coarseness,Coarseness,General,1,5,Measures the degree of 'Coarseness' expressed in the conversation
+Behavioral Tendencies and Subcomponents:,Behavioral Tendencies and Subcomponents:,General,1,5,Measures the degree of 'Behavioral Tendencies and Subcomponents:' expressed in the conversation
+Sensitivity,Sensitivity,General,1,5,Measures the degree of 'Sensitivity' expressed in the conversation
+Divided Attention Ability,Divided Attention Ability,General,1,5,Measures the degree of 'Divided Attention Ability' expressed in the conversation
+Psychological construct: Acculturative Stress score,Psychological construct: Acculturative Stress score,Emotional,1,5,Measures the degree of 'Psychological construct: Acculturative Stress score' expressed in the conversation
+Dauntlessness,Dauntlessness,General,1,5,Measures the degree of 'Dauntlessness' expressed in the conversation
+Concreteness,Concreteness,General,1,5,Measures the degree of 'Concreteness' expressed in the conversation
+Hysteria (Hy),Hysteria (Hy),General,1,5,Measures the degree of 'Hysteria (Hy)' expressed in the conversation
+911. Jewish spiritual metric: Sukkot lulav-shaking days,Jewish spiritual metric: Sukkot lulav-shaking days,Spiritual,1,5,Measures the degree of 'Jewish spiritual metric: Sukkot lulav-shaking days' expressed in the conversation
+Sentence Structure,Sentence Structure,General,1,5,Measures the degree of 'Sentence Structure' expressed in the conversation
+Esteem Needs,Esteem Needs,General,1,5,Measures the degree of 'Esteem Needs' expressed in the conversation
+Understanding mechanical concepts,Understanding mechanical concepts,General,1,5,Measures the degree of 'Understanding mechanical concepts' expressed in the conversation
+Auditory Memory Recall,Auditory Memory Recall,General,1,5,Measures the degree of 'Auditory Memory Recall' expressed in the conversation
+Storytelling proficiency,Storytelling proficiency,General,1,5,Measures the degree of 'Storytelling proficiency' expressed in the conversation
+Music-lessons years,Music-lessons years,General,1,5,Measures the degree of 'Music-lessons years' expressed in the conversation
+Warmheartedness,Warmheartedness,General,1,5,Measures the degree of 'Warmheartedness' expressed in the conversation
+Self-effacement,Self-effacement,General,1,5,Measures the degree of 'Self-effacement' expressed in the conversation
+Outspokenness,Outspokenness,General,1,5,Measures the degree of 'Outspokenness' expressed in the conversation
+Sleep-environment temperature,Sleep-environment temperature,Lifestyle,1,5,Measures the degree of 'Sleep-environment temperature' expressed in the conversation
+Comprehension of spoken information,Comprehension of spoken information,General,1,5,Measures the degree of 'Comprehension of spoken information' expressed in the conversation
+Blissfulness,Blissfulness,General,1,5,Measures the degree of 'Blissfulness' expressed in the conversation
+Sequential Memory Recall,Sequential Memory Recall,General,1,5,Measures the degree of 'Sequential Memory Recall' expressed in the conversation
+Withdrawnness,Withdrawnness,General,1,5,Measures the degree of 'Withdrawnness' expressed in the conversation
+892. Hindu spiritual metric: Yoga discipline hours / week,Hindu spiritual metric: Yoga discipline hours / week,Spiritual,1,5,Measures the degree of 'Hindu spiritual metric: Yoga discipline hours / week' expressed in the conversation
+Conservatism,Conservatism,General,1,5,Measures the degree of 'Conservatism' expressed in the conversation
+Adaptability and Flexibility Subcomponents:,Adaptability and Flexibility Subcomponents:,General,1,5,Measures the degree of 'Adaptability and Flexibility Subcomponents:' expressed in the conversation
+898. Hindu spiritual metric: Vrata vows observed / year,Hindu spiritual metric: Vrata vows observed / year,Spiritual,1,5,Measures the degree of 'Hindu spiritual metric: Vrata vows observed / year' expressed in the conversation
+Ardency,Ardency,General,1,5,Measures the degree of 'Ardency' expressed in the conversation
+Aesthetic Appreciation,Aesthetic Appreciation,General,1,5,Measures the degree of 'Aesthetic Appreciation' expressed in the conversation
+Transactional Leadership:,Transactional Leadership:,Leadership,1,5,Measures the degree of 'Transactional Leadership:' expressed in the conversation
+Value orientation: Universalism,Value orientation: Universalism,General,1,5,Measures the degree of 'Value orientation: Universalism' expressed in the conversation
+Perseverance,Perseverance,General,1,5,Measures the degree of 'Perseverance' expressed in the conversation
+Regularity of Self-Reflection,Regularity of Self-Reflection,General,1,5,Measures the degree of 'Regularity of Self-Reflection' expressed in the conversation
+Controlling Reactions,Controlling Reactions,General,1,5,Measures the degree of 'Controlling Reactions' expressed in the conversation
+Psychological construct: Cultural Intelligence – Behavioral,Psychological construct: Cultural Intelligence – Behavioral,Cognitive,1,5,Measures the degree of 'Psychological construct: Cultural Intelligence – Behavioral' expressed in the conversation
+Metabolic Rate (Low or High),Metabolic Rate (Low or High),General,1,5,Measures the degree of 'Metabolic Rate (Low or High)' expressed in the conversation
+Dietary Habits,Dietary Habits,Lifestyle,1,5,Measures the degree of 'Dietary Habits' expressed in the conversation
+Significance: Desire to make an impact,Significance: Desire to make an impact,General,1,5,Measures the degree of 'Significance: Desire to make an impact' expressed in the conversation
+Psychological construct: Resilience-Trait score,Psychological construct: Resilience-Trait score,Cognitive,1,5,Measures the degree of 'Psychological construct: Resilience-Trait score' expressed in the conversation
+Boredom Susceptibility,Boredom Susceptibility,General,1,5,Measures the degree of 'Boredom Susceptibility' expressed in the conversation
+Psychological construct: Consummatory Pleasure scale,Psychological construct: Consummatory Pleasure scale,Cognitive,1,5,Measures the degree of 'Psychological construct: Consummatory Pleasure scale' expressed in the conversation
+Leadership Styles and Behaviors:,Leadership Styles and Behaviors:,Leadership,1,5,Measures the degree of 'Leadership Styles and Behaviors:' expressed in the conversation
+723. I Ching hexagram 5 resonance level,I Ching hexagram 5 resonance level,General,1,5,Measures the degree of 'I Ching hexagram 5 resonance level' expressed in the conversation
+Macronutrient ratio: carbs,Macronutrient ratio: carbs,General,1,5,Measures the degree of 'Macronutrient ratio: carbs' expressed in the conversation
+Passport-stamps count,Passport-stamps count,General,1,5,Measures the degree of 'Passport-stamps count' expressed in the conversation
+Local-food sourcing %,Local-food sourcing %,Lifestyle,1,5,Measures the degree of 'Local-food sourcing %' expressed in the conversation
+Patient care orientation,Patient care orientation,General,1,5,Measures the degree of 'Patient care orientation' expressed in the conversation
+Soft-skill training hours,Soft-skill training hours,General,1,5,Measures the degree of 'Soft-skill training hours' expressed in the conversation
+Graffiti appreciation,Graffiti appreciation,General,1,5,Measures the degree of 'Graffiti appreciation' expressed in the conversation
+Preference for Home-Cooked vs Restaurant Meals,Preference for Home-Cooked vs Restaurant Meals,General,1,5,Measures the degree of 'Preference for Home-Cooked vs Restaurant Meals' expressed in the conversation
+Immune-response age,Immune-response age,General,1,5,Measures the degree of 'Immune-response age' expressed in the conversation
+Social-cognition variable: Cognitive Empathy,Social-cognition variable: Cognitive Empathy,Cognitive,1,5,Measures the degree of 'Social-cognition variable: Cognitive Empathy' expressed in the conversation
+Kink-interest diversity,Kink-interest diversity,General,1,5,Measures the degree of 'Kink-interest diversity' expressed in the conversation
+Adaptability and Flexibility:,Adaptability and Flexibility:,General,1,5,Measures the degree of 'Adaptability and Flexibility:' expressed in the conversation
+Judging Consequences,Judging Consequences,General,1,5,Measures the degree of 'Judging Consequences' expressed in the conversation
+Harmfulness,Harmfulness,General,1,5,Measures the degree of 'Harmfulness' expressed in the conversation
+Affinity,Affinity,General,1,5,Measures the degree of 'Affinity' expressed in the conversation
+Abasement,Abasement,General,1,5,Measures the degree of 'Abasement' expressed in the conversation
+Chronic pain presence,Chronic pain presence,General,1,5,Measures the degree of 'Chronic pain presence' expressed in the conversation
+520. Discernment practice hours / week,Discernment practice hours / week,General,1,5,Measures the degree of 'Discernment practice hours / week' expressed in the conversation
+Initiative,Initiative,General,1,5,Measures the degree of 'Initiative' expressed in the conversation
+Courageousness,Courageousness,General,1,5,Measures the degree of 'Courageousness' expressed in the conversation
+Joyfulness,Joyfulness,Emotional,1,5,Measures the degree of 'Joyfulness' expressed in the conversation
+Suspicion,Suspicion,General,1,5,Measures the degree of 'Suspicion' expressed in the conversation
+Basophil count,Basophil count,General,1,5,Measures the degree of 'Basophil count' expressed in the conversation
+Attachment avoidance score,Attachment avoidance score,General,1,5,Measures the degree of 'Attachment avoidance score' expressed in the conversation
+Time Orientation End Points:,Time Orientation End Points:,General,1,5,Measures the degree of 'Time Orientation End Points:' expressed in the conversation
+Brazenness,Brazenness,General,1,5,Measures the degree of 'Brazenness' expressed in the conversation
+Talkativeness,Talkativeness,General,1,5,Measures the degree of 'Talkativeness' expressed in the conversation
+Equitableness,Equitableness,General,1,5,Measures the degree of 'Equitableness' expressed in the conversation
+Ideas generated/day,Ideas generated/day,General,1,5,Measures the degree of 'Ideas generated/day' expressed in the conversation
+Originality,Originality,General,1,5,Measures the degree of 'Originality' expressed in the conversation
+Fearfulness: Fear of physical dangers,Fearfulness: Fear of physical dangers,Emotional,1,5,Measures the degree of 'Fearfulness: Fear of physical dangers' expressed in the conversation
+Dance rehearsal hours/week,Dance rehearsal hours/week,General,1,5,Measures the degree of 'Dance rehearsal hours/week' expressed in the conversation
+561. Practice frequency: Mantra meditation,Practice frequency: Mantra meditation,Spiritual,1,5,Measures the degree of 'Practice frequency: Mantra meditation' expressed in the conversation
+Public-transport km/week,Public-transport km/week,General,1,5,Measures the degree of 'Public-transport km/week' expressed in the conversation
+Social Desirability Bias,Social Desirability Bias,Social,1,5,Measures the degree of 'Social Desirability Bias' expressed in the conversation
+761. I Ching hexagram 43 resonance level,I Ching hexagram 43 resonance level,General,1,5,Measures the degree of 'I Ching hexagram 43 resonance level' expressed in the conversation
+Disagreeableness,Disagreeableness,General,1,5,Measures the degree of 'Disagreeableness' expressed in the conversation
+Participation in Community Activities,Participation in Community Activities,General,1,5,Measures the degree of 'Participation in Community Activities' expressed in the conversation
+Impudence,Impudence,General,1,5,Measures the degree of 'Impudence' expressed in the conversation
+Analogies,Analogies,General,1,5,Measures the degree of 'Analogies' expressed in the conversation
+Clumsiness,Clumsiness,General,1,5,Measures the degree of 'Clumsiness' expressed in the conversation
+Tendency Toward Compromise or Confrontation,Tendency Toward Compromise or Confrontation,General,1,5,Measures the degree of 'Tendency Toward Compromise or Confrontation' expressed in the conversation
+737. I Ching hexagram 19 resonance level,I Ching hexagram 19 resonance level,General,1,5,Measures the degree of 'I Ching hexagram 19 resonance level' expressed in the conversation
+Robotics-interaction frequency,Robotics-interaction frequency,General,1,5,Measures the degree of 'Robotics-interaction frequency' expressed in the conversation
+Casual lifestyle,Casual lifestyle,General,1,5,Measures the degree of 'Casual lifestyle' expressed in the conversation
+Collectedness,Collectedness,General,1,5,Measures the degree of 'Collectedness' expressed in the conversation
+Reliance on context,Reliance on context,General,1,5,Measures the degree of 'Reliance on context' expressed in the conversation
+Delegation skills,Delegation skills,General,1,5,Measures the degree of 'Delegation skills' expressed in the conversation
+767. I Ching hexagram 49 resonance level,I Ching hexagram 49 resonance level,General,1,5,Measures the degree of 'I Ching hexagram 49 resonance level' expressed in the conversation
+Managing emotions,Managing emotions,Emotional,1,5,Measures the degree of 'Managing emotions' expressed in the conversation
+Scripture memorization verses,Scripture memorization verses,General,1,5,Measures the degree of 'Scripture memorization verses' expressed in the conversation
+Conventional,Conventional,General,1,5,Measures the degree of 'Conventional' expressed in the conversation
+890. Hindu spiritual metric: Bhagavad-Gita study hours,Hindu spiritual metric: Bhagavad-Gita study hours,Spiritual,1,5,Measures the degree of 'Hindu spiritual metric: Bhagavad-Gita study hours' expressed in the conversation
+Open-source contributions,Open-source contributions,General,1,5,Measures the degree of 'Open-source contributions' expressed in the conversation
+Psychological construct: Social Conformity tendency,Psychological construct: Social Conformity tendency,Cognitive,1,5,Measures the degree of 'Psychological construct: Social Conformity tendency' expressed in the conversation
+Individuality,Individuality,General,1,5,Measures the degree of 'Individuality' expressed in the conversation
+740. I Ching hexagram 22 resonance level,I Ching hexagram 22 resonance level,General,1,5,Measures the degree of 'I Ching hexagram 22 resonance level' expressed in the conversation
+Attachment style: Secure,Attachment style: Secure,General,1,5,Measures the degree of 'Attachment style: Secure' expressed in the conversation
+Intelligence Quotient (IQ),Intelligence Quotient (IQ),General,1,5,Measures the degree of 'Intelligence Quotient (IQ)' expressed in the conversation
+Blog-subscriber count,Blog-subscriber count,General,1,5,Measures the degree of 'Blog-subscriber count' expressed in the conversation
+Non-Verbal Communication Skills,Non-Verbal Communication Skills,General,1,5,Measures the degree of 'Non-Verbal Communication Skills' expressed in the conversation
+Drug-use history,Drug-use history,General,1,5,Measures the degree of 'Drug-use history' expressed in the conversation
+Commute time/day,Commute time/day,General,1,5,Measures the degree of 'Commute time/day' expressed in the conversation
+Decision-making speed,Decision-making speed,General,1,5,Measures the degree of 'Decision-making speed' expressed in the conversation
+Psychological construct: Excuse-Making tendency,Psychological construct: Excuse-Making tendency,Cognitive,1,5,Measures the degree of 'Psychological construct: Excuse-Making tendency' expressed in the conversation
+Peer-to-peer lending usage,Peer-to-peer lending usage,General,1,5,Measures the degree of 'Peer-to-peer lending usage' expressed in the conversation
+Psychological construct: Eye-Contact avoidance score,Psychological construct: Eye-Contact avoidance score,Cognitive,1,5,Measures the degree of 'Psychological construct: Eye-Contact avoidance score' expressed in the conversation
+Social-cognition variable: Faux Pas Recognition accuracy,Social-cognition variable: Faux Pas Recognition accuracy,Social,1,5,Measures the degree of 'Social-cognition variable: Faux Pas Recognition accuracy' expressed in the conversation
+Conscientiousness (C):,Conscientiousness (C):,General,1,5,Measures the degree of 'Conscientiousness (C):' expressed in the conversation
+Use of Nature as a Stress Reliever,Use of Nature as a Stress Reliever,Emotional,1,5,Measures the degree of 'Use of Nature as a Stress Reliever' expressed in the conversation
+Attitude toward learning,Attitude toward learning,General,1,5,Measures the degree of 'Attitude toward learning' expressed in the conversation
+Conscientiousness Facets:,Conscientiousness Facets:,General,1,5,Measures the degree of 'Conscientiousness Facets:' expressed in the conversation
+Honesty-humility trait score,Honesty-humility trait score,Moral,1,5,Measures the degree of 'Honesty-humility trait score' expressed in the conversation
+Digital-nomad months,Digital-nomad months,General,1,5,Measures the degree of 'Digital-nomad months' expressed in the conversation
+516. Religious coping – Negative,Religious coping – Negative,Spiritual,1,5,Measures the degree of 'Religious coping – Negative' expressed in the conversation
+Snacking Behavior,Snacking Behavior,General,1,5,Measures the degree of 'Snacking Behavior' expressed in the conversation
+Aura-color perception,Aura-color perception,General,1,5,Measures the degree of 'Aura-color perception' expressed in the conversation
+638. Sacred text engagement: Zohar (Kabbalah) study hours,Sacred text engagement: Zohar (Kabbalah) study hours,Spiritual,1,5,Measures the degree of 'Sacred text engagement: Zohar (Kabbalah) study hours' expressed in the conversation
+Motivational Drivers:,Motivational Drivers:,General,1,5,Measures the degree of 'Motivational Drivers:' expressed in the conversation
+Cloud-backup frequency,Cloud-backup frequency,General,1,5,Measures the degree of 'Cloud-backup frequency' expressed in the conversation
+Learning Style,Learning Style,General,1,5,Measures the degree of 'Learning Style' expressed in the conversation
+872. Islamic practice: Seerah study hours,Islamic practice: Seerah study hours,Spiritual,1,5,Measures the degree of 'Islamic practice: Seerah study hours' expressed in the conversation
+Safety compliance,Safety compliance,General,1,5,Measures the degree of 'Safety compliance' expressed in the conversation
+Sensationalism,Sensationalism,General,1,5,Measures the degree of 'Sensationalism' expressed in the conversation
+Nationality,Nationality,General,1,5,Measures the degree of 'Nationality' expressed in the conversation
+Drollness,Drollness,General,1,5,Measures the degree of 'Drollness' expressed in the conversation
+Cooperation,Cooperation,General,1,5,Measures the degree of 'Cooperation' expressed in the conversation
+Breakfast-skipping frequency,Breakfast-skipping frequency,General,1,5,Measures the degree of 'Breakfast-skipping frequency' expressed in the conversation
+922. Sikh spiritual metric: Kirtan participation frequency,Sikh spiritual metric: Kirtan participation frequency,Spiritual,1,5,Measures the degree of 'Sikh spiritual metric: Kirtan participation frequency' expressed in the conversation
+Impulsivity,Impulsivity,Risk,1,5,Measures the degree of 'Impulsivity' expressed in the conversation
+Museum visits/year,Museum visits/year,General,1,5,Measures the degree of 'Museum visits/year' expressed in the conversation
+Choir participation years,Choir participation years,General,1,5,Measures the degree of 'Choir participation years' expressed in the conversation
+Delegation Ability,Delegation Ability,General,1,5,Measures the degree of 'Delegation Ability' expressed in the conversation
+788. Kabbalah sephira balance: Tiferet,Kabbalah sephira balance: Tiferet,Spiritual,1,5,Measures the degree of 'Kabbalah sephira balance: Tiferet' expressed in the conversation
+Desire to influence others,Desire to influence others,General,1,5,Measures the degree of 'Desire to influence others' expressed in the conversation
+Vivacity,Vivacity,General,1,5,Measures the degree of 'Vivacity' expressed in the conversation
+Genialness,Genialness,General,1,5,Measures the degree of 'Genialness' expressed in the conversation
+Cognitive measure: Working Memory Index,Cognitive measure: Working Memory Index,Cognitive,1,5,Measures the degree of 'Cognitive measure: Working Memory Index' expressed in the conversation
+Ethical practices,Ethical practices,Moral,1,5,Measures the degree of 'Ethical practices' expressed in the conversation
+945. New-Age spiritual metric: Channeling sessions / year,New-Age spiritual metric: Channeling sessions / year,Spiritual,1,5,Measures the degree of 'New-Age spiritual metric: Channeling sessions / year' expressed in the conversation
+Civility,Civility,General,1,5,Measures the degree of 'Civility' expressed in the conversation
+Sleep Apnea,Sleep Apnea,Lifestyle,1,5,Measures the degree of 'Sleep Apnea' expressed in the conversation
+Classiness,Classiness,General,1,5,Measures the degree of 'Classiness' expressed in the conversation
+Control over situations,Control over situations,General,1,5,Measures the degree of 'Control over situations' expressed in the conversation
+Time outdoors/day (h),Time outdoors/day (h),General,1,5,Measures the degree of 'Time outdoors/day (h)' expressed in the conversation
+Effeteness,Effeteness,General,1,5,Measures the degree of 'Effeteness' expressed in the conversation
+Polygenic risk: cardiovascular disease,Polygenic risk: cardiovascular disease,Risk,1,5,Measures the degree of 'Polygenic risk: cardiovascular disease' expressed in the conversation
+Psychological construct: Identity Diffusion level,Psychological construct: Identity Diffusion level,Cognitive,1,5,Measures the degree of 'Psychological construct: Identity Diffusion level' expressed in the conversation
+Learning through movement,Learning through movement,General,1,5,Measures the degree of 'Learning through movement' expressed in the conversation
+Caffeine sensitivity gene,Caffeine sensitivity gene,General,1,5,Measures the degree of 'Caffeine sensitivity gene' expressed in the conversation
+Hatefulness,Hatefulness,General,1,5,Measures the degree of 'Hatefulness' expressed in the conversation
+Persistence:,Persistence:,General,1,5,Measures the degree of 'Persistence:' expressed in the conversation
+Psychological construct: Perfectionistic Strivings,Psychological construct: Perfectionistic Strivings,Cognitive,1,5,Measures the degree of 'Psychological construct: Perfectionistic Strivings' expressed in the conversation
+Wake-time consistency,Wake-time consistency,General,1,5,Measures the degree of 'Wake-time consistency' expressed in the conversation
+Numerical Reasoning:,Numerical Reasoning:,Cognitive,1,5,Measures the degree of 'Numerical Reasoning:' expressed in the conversation
+Social-cognition variable: Mentalizing network activation,Social-cognition variable: Mentalizing network activation,Social,1,5,Measures the degree of 'Social-cognition variable: Mentalizing network activation' expressed in the conversation
+Patriotism,Patriotism,General,1,5,Measures the degree of 'Patriotism' expressed in the conversation
+Leadership Styles:,Leadership Styles:,Leadership,1,5,Measures the degree of 'Leadership Styles:' expressed in the conversation
+Servility,Servility,General,1,5,Measures the degree of 'Servility' expressed in the conversation
+742. I Ching hexagram 24 resonance level,I Ching hexagram 24 resonance level,General,1,5,Measures the degree of 'I Ching hexagram 24 resonance level' expressed in the conversation
+Enneagram Personality Types:,Enneagram Personality Types:,General,1,5,Measures the degree of 'Enneagram Personality Types:' expressed in the conversation
+Stress Recovery Ability,Stress Recovery Ability,Emotional,1,5,Measures the degree of 'Stress Recovery Ability' expressed in the conversation
+Troubleshooting technical issues,Troubleshooting technical issues,General,1,5,Measures the degree of 'Troubleshooting technical issues' expressed in the conversation
+Defense-mechanism tendency: Introjection,Defense-mechanism tendency: Introjection,General,1,5,Measures the degree of 'Defense-mechanism tendency: Introjection' expressed in the conversation
+Irritability,Irritability,General,1,5,Measures the degree of 'Irritability' expressed in the conversation
+Travel-companions diversity,Travel-companions diversity,General,1,5,Measures the degree of 'Travel-companions diversity' expressed in the conversation
+627. Sacred text engagement: Quran surahs memorized,Sacred text engagement: Quran surahs memorized,General,1,5,Measures the degree of 'Sacred text engagement: Quran surahs memorized' expressed in the conversation
+Trust in others,Trust in others,Social,1,5,Measures the degree of 'Trust in others' expressed in the conversation
+Gamified-finance-app usage,Gamified-finance-app usage,General,1,5,Measures the degree of 'Gamified-finance-app usage' expressed in the conversation
+823. Buddhist practice: Eightfold Path – Right Intention level,Buddhist practice: Eightfold Path – Right Intention level,General,1,5,Measures the degree of 'Buddhist practice: Eightfold Path – Right Intention level' expressed in the conversation
+Caffeine intake (mg/day),Caffeine intake (mg/day),General,1,5,Measures the degree of 'Caffeine intake (mg/day)' expressed in the conversation
+Comfort with Vulnerability,Comfort with Vulnerability,General,1,5,Measures the degree of 'Comfort with Vulnerability' expressed in the conversation
+Anticipativeness,Anticipativeness,General,1,5,Measures the degree of 'Anticipativeness' expressed in the conversation
+Additional Common Parameters and Their End Points:,Additional Common Parameters and Their End Points:,General,1,5,Measures the degree of 'Additional Common Parameters and Their End Points:' expressed in the conversation
+Avoiding:,Avoiding:,General,1,5,Measures the degree of 'Avoiding:' expressed in the conversation
+Home-security-system presence,Home-security-system presence,General,1,5,Measures the degree of 'Home-security-system presence' expressed in the conversation
+HEXACO domain: Honesty-Humility,HEXACO domain: Honesty-Humility,Moral,1,5,Measures the degree of 'HEXACO domain: Honesty-Humility' expressed in the conversation
+Eating Habits (Home-Cooked vs. Eating Out),Eating Habits (Home-Cooked vs. Eating Out),General,1,5,Measures the degree of 'Eating Habits (Home-Cooked vs. Eating Out)' expressed in the conversation
+Decision-Making Confidence,Decision-Making Confidence,General,1,5,Measures the degree of 'Decision-Making Confidence' expressed in the conversation
+Alignment with societal roles,Alignment with societal roles,General,1,5,Measures the degree of 'Alignment with societal roles' expressed in the conversation
+Connectedness: Belief in interconnections,Connectedness: Belief in interconnections,General,1,5,Measures the degree of 'Connectedness: Belief in interconnections' expressed in the conversation
+Quirkiness,Quirkiness,General,1,5,Measures the degree of 'Quirkiness' expressed in the conversation
+Creative resilience,Creative resilience,General,1,5,Measures the degree of 'Creative resilience' expressed in the conversation
+Rapid cognitive processing,Rapid cognitive processing,Cognitive,1,5,Measures the degree of 'Rapid cognitive processing' expressed in the conversation
+Cordiality,Cordiality,General,1,5,Measures the degree of 'Cordiality' expressed in the conversation
+Types of Mindfulness Techniques Used,Types of Mindfulness Techniques Used,General,1,5,Measures the degree of 'Types of Mindfulness Techniques Used' expressed in the conversation
+Economic reasoning,Economic reasoning,Cognitive,1,5,Measures the degree of 'Economic reasoning' expressed in the conversation
+Conformity,Conformity,General,1,5,Measures the degree of 'Conformity' expressed in the conversation
+Pet-enrichment activities count,Pet-enrichment activities count,General,1,5,Measures the degree of 'Pet-enrichment activities count' expressed in the conversation
+Aestheticism,Aestheticism,General,1,5,Measures the degree of 'Aestheticism' expressed in the conversation
+Type of Support Preferred (Emotional vs. Practical),Type of Support Preferred (Emotional vs. Practical),Emotional,1,5,Measures the degree of 'Type of Support Preferred (Emotional vs. Practical)' expressed in the conversation
+Mental Arithmetic Speed,Mental Arithmetic Speed,General,1,5,Measures the degree of 'Mental Arithmetic Speed' expressed in the conversation
+Patience: Resistance to anger,Patience: Resistance to anger,Emotional,1,5,Measures the degree of 'Patience: Resistance to anger' expressed in the conversation
+Flawlessness,Flawlessness,General,1,5,Measures the degree of 'Flawlessness' expressed in the conversation
+Self-Efficacy,Self-Efficacy,General,1,5,Measures the degree of 'Self-Efficacy' expressed in the conversation
+Computer Skills:,Computer Skills:,General,1,5,Measures the degree of 'Computer Skills:' expressed in the conversation
+899. Jewish spiritual metric: Shabbat candle-lighting consistency,Jewish spiritual metric: Shabbat candle-lighting consistency,Spiritual,1,5,Measures the degree of 'Jewish spiritual metric: Shabbat candle-lighting consistency' expressed in the conversation
+Spelling Accuracy,Spelling Accuracy,General,1,5,Measures the degree of 'Spelling Accuracy' expressed in the conversation
+793. Sufi practice: Dhikr repetitions / day,Sufi practice: Dhikr repetitions / day,Spiritual,1,5,Measures the degree of 'Sufi practice: Dhikr repetitions / day' expressed in the conversation
+Peacefulness,Peacefulness,General,1,5,Measures the degree of 'Peacefulness' expressed in the conversation
+Doggedness,Doggedness,General,1,5,Measures the degree of 'Doggedness' expressed in the conversation
+Decency,Decency,Moral,1,5,Measures the degree of 'Decency' expressed in the conversation
+Processed-food frequency,Processed-food frequency,Lifestyle,1,5,Measures the degree of 'Processed-food frequency' expressed in the conversation

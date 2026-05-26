@@ -1,0 +1,3090 @@
+[
+  {
+    "id": 1,
+    "scenario": "a job interview where candidate is nervous but competent",
+    "conversation": "Interviewer: Hi, thanks for coming in today. Can I get you a glass of water before we start?\n\nCandidate: Ah, no thank you, I'm fine. I appreciate the offer, though. *nervous laughter*\n\nInterviewer: So, let's get started then. Can you tell me a little bit about yourself and why you're interested in this position?\n\nCandidate: *fidgets in seat* Okay, sure. I've got about five years of experience in marketing, and I've been really enjoying it. I'm looking for a new challenge, and this role seems like a great opportunity to grow professionally.\n\nInterviewer: That's great. Can you walk me through your experience with social media management? We're looking to expand our presence on platforms like Instagram and TikTok.\n\nCandidate: *pauses to collect thoughts* Yes, of course. I've managed social media campaigns for a few different companies in the past, and I've seen some really positive results. I've got a good understanding of what works and what doesn't, and I'm excited to bring that expertise to this role.\n\nInterviewer: Wow, that sounds impressive. Can you give me an example of a successful campaign you've managed?\n\nCandidate: *smiles slightly* Yeah, sure. One of my favorite projects was a social media campaign I ran for a non-profit organization. We were trying to raise awareness about a specific issue, and we ended up getting over 10,000 new followers and a 50% increase in engagement. It was really rewarding to see the impact we had.\n\nInterviewer: That's amazing. Can you tell me about your experience working with teams? We're a pretty collaborative environment here.\n\nCandidate: *nods* Yeah, I'm very comfortable working with teams. In my previous roles, I've always made sure to communicate clearly and effectively with my colleagues, and I think that's helped us to get some really great results. I'm a big believer in the importance of teamwork and collaboration.\n\nInterviewer: Okay, last question for now. Can you tell me about a time when you faced a difficult challenge in your work? How did you handle it?\n\nCandidate: *takes a deep breath* Okay... *pauses* Alright, so in my previous role, we were working on a project and one of our key team members left unexpectedly. We had to scramble to find a replacement, and it caused some delays in our timeline. But I was able to step in and take on some of the responsibilities, and we were able to get the project back on track. It was a stressful situation, but I think it shows that I'm able to adapt and think on my feet. *smiles slightly*",
+    "scores": {
+      "Risktaking": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Naivety": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Acidity": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Democratic Leadership": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Common-sense": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Hesitation": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Discontentment": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Overprotectiveness": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Merriness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Emotionalism": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Self-improvement": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Statistical Reasoning": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Assertiveness and control in relationships": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Cunningness": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Adventure-Seeking Behavior": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Compassion Fatigue": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Moroseness": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Specialist": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Aloofness": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Genuine": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Determinedness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Honesty": {
+        "score": 5,
+        "confidence": 0.95
+      },
+      "Humility": {
+        "score": 4,
+        "confidence": 0.85
+      },
+      "Relationship Building": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Pure Challenge": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Numerical Reasoning": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Openness": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "SelfEsteem": {
+        "score": 3,
+        "confidence": 0.5
+      },
+      "Comparing alphanumeric data": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Big-heartedness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Compulsive activities": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Disrespect": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "FSH level": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Self Perspective": {
+        "score": 3,
+        "confidence": 0.5
+      },
+      "Desperation": {
+        "score": 2,
+        "confidence": 0.3
+      },
+      "Affiliation Motivation": {
+        "score": 3,
+        "confidence": 0.5
+      },
+      "Anatomy knowledge": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Passive-Aggressive": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Presence of Spiritual Pain": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Role of Spirituality in Community Involvement": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Structure": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Eco-tourism trips": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Chivalrousness": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Pilgrimage participation count": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Mindfulness facet: Observing": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Submissiveness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Training-cycle length": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Sensitiveness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Negative Affect Frequency": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Innovation and Creativity Components": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Achievement Motivation": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Feedback-giving frequency": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Dance-cardio sessions": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Enthusiasm": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Psychological construct: Social Desirability tendency": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Inattentiveness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Unassertiveness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Decision-making decisiveness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Sense-of-coherence score": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Justice-mindedness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Subscription count": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Depression Symptoms": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Spatial perception": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Brevity": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Orderliness": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Multiculturalism": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Creative risk-taking tendency": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Inefficiency": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Network basics": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Alphabetical filing skills": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Work Styles": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Character strength: Perseverance": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Competition": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Logical Sequence Identification": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Sustainable-transport usage": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Hardworking": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Emotional-intelligence measure: Impulsiveness": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Dishonesty": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Preferred epistemology": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Memory for Sounds": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Sportsmanship rating": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Immaturity": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Health-literacy level": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Estimating Calculations": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Depression: Feelings of sadness and hopelessness": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Synthesis of information": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Leadership Potential": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Ethical standards": {
+        "score": 5,
+        "confidence": 0.95
+      },
+      "High-spiritedness": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Critical reasoning": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Sleep-disorder diagnosis": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Listening Skills Subcomponents": {
+        "score": 3,
+        "confidence": 0.5
+      },
+      "Intrinsic Motivation": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Impartial-mindedness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Burnout Symptoms": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Holiness": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Selfcontrol": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "SelfDirectedness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Encouraging participation": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Impracticalness": {
+        "score": 1,
+        "confidence": 0.5
+      },
+      "Meeting Deadlines": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Data Analysis": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Social Interaction Skills": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Psychoticism": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Ethical leadership rating": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Slothfulness": {
+        "score": 1,
+        "confidence": 0.5
+      },
+      "Happiness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Contentment Levels": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Neuroticism": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Desire for excellence": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Perceiving": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Liberalism": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Inversion comfort level": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Affection": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Numeric Filing Skills": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Martyrdom": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Parathyroid-hormone level": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Seeking approval": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Judging (J)": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Big Five facet Openness \u2013 Artistic Interests": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Operant-Learning rate": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Need for Achievement level": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Cantankerousness": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Material properties knowledge": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Hostility": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Independence": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "800. Sufi practice: Sufi retreat attendance count": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Chromatin-accessibility score": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "644. Spiritual virtue: Humility practice index": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "754. I Ching hexagram 36 resonance level": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Well-being component: Engagement": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Need for social interaction": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Peer-collaboration hours": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Arts and Humanities": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "596. Religious practice: Quran khatam cycles per year": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "926. Bah\u00e1\u2019\u00ed spiritual metric: Ridv\u00e1n festival participation": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Compassion": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Information Retention": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Eye-contact duration": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Self-righteousness": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "General Mood and Attitude": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Serotonin transporter availability": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Contribution to Group Goals": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Dignity": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "HEXACO Personality Inventory Facets": {
+        "score": 3,
+        "confidence": 0.5
+      },
+      "607. Energy-healing practice: Reiki sessions / year": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "692. Astrology: Rising sign is Scorpio": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Character strength: Social Intelligence": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Bravery": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Childhood Experiences": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Data-sharing consent level": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Vision-check frequency": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Physical-violence exposure": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Macronutrient ratio: fat": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Cooking and Culinary Arts": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Language use": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Dance-style mastery diversity": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Satya Adherence": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Ethnocentrism": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Emotional Boundaries": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Creativity in solutions": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Psychological construct: Hope scale": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "565. Practice frequency: Walking meditation": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Depression (DEP)": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Understanding Mathematical Concepts": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Hypomania (Ma)": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Goal-Directed Behavior": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Depth of Emotional Connections": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Binding foundations index": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Ego Dissolution Frequency": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Activator: Turning thoughts into action": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Gnostic spiritual metric: Archon meditation frequency": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Exemplariness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Moral and Ethical Parameters: Submission": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Moral and Ethical Parameters: Frankness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Psychological construct: Psychological Safety climate": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Psychological construct: Self-Compassion total": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Psychological construct: Executive-Function composite": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Rebelliousness": {
+        "score": 1,
+        "confidence": 0.5
+      },
+      "Volunteer Work": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Intellect": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Use of Mathematical Formulas": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Coarseness": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Behavioral Tendencies and Subcomponents: Sensitivity": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Behavioral Tendencies and Subcomponents: Divided Attention Ability": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Psychological construct: Acculturative Stress score": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Dauntlessness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Concreteness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Hysteria": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Sukkot lulav-shaking days": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Sentence Structure": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Esteem Needs": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Understanding mechanical concepts": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Auditory Memory Recall": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Storytelling proficiency": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Music-lessons years": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Warmheartedness": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Self-effacement": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Outspokenness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Sleep-environment temperature": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Comprehension of spoken information": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Blissfulness": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Sequential Memory Recall": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Withdrawnness": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Yoga discipline hours / week": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Conservatism": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Adaptability and Flexibility": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Hindu spiritual metric: Vrata vows observed / year": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Ardency": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Aesthetic Appreciation": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Transactional Leadership": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Value orientation: Universalism": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Perseverance": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Regularity of Self-Reflection": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Controlling Reactions": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Cultural Intelligence \u2013 Behavioral": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Metabolic Rate (Low or High)": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Dietary Habits": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Significance: Desire to make an impact": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Resilience-Trait score": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Boredom Susceptibility": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Consummatory Pleasure scale": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Leadership Styles and Behaviors": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "I Ching hexagram 5 resonance level": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Macronutrient ratio: carbs": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Passport-stamps count": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Local-food sourcing %": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "898. Hindu spiritual metric: Vrata vows observed / year": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Patient care orientation": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Soft-skill training hours": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Graffiti appreciation": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Preference for Home-Cooked vs Restaurant Meals": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Immune-response age": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Social-cognition variable: Cognitive Empathy": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Kink-interest diversity": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Judging Consequences": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Harmfulness": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Affinity": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Abasement": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Chronic pain presence": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Discernment practice hours / week": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Initiative": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Courageousness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Joyfulness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Suspicion": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Basophil count": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Attachment avoidance score": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Time Orientation End Points": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Brazenness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Talkativeness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Equitableness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Ideas generated/day": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Originality": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Fearfulness: Fear of physical dangers": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Dance rehearsal hours/week": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "561. Practice frequency: Mantra meditation": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Public-transport km/week": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Social Desirability Bias": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "761. I Ching hexagram 43 resonance level": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Disagreeableness": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Participation in Community Activities": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Impudence": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Analogies": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Clumsiness": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Tendency Toward Compromise or Confrontation": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "737. I Ching hexagram 19 resonance level": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Robotics-interaction frequency": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Casual lifestyle": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Collectedness": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Reliance on context": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Delegation skills": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "I Ching hexagram 49 resonance level": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Managing emotions": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Scripture memorization verses": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Conventional": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Hindu spiritual metric: Bhagavad-Gita study hours": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Open-source contributions": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Psychological construct: Social Conformity tendency": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Individuality": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "I Ching hexagram 22 resonance level": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Attachment style: Secure": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Intelligence Quotient (IQ)": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Blog-subscriber count": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Non-Verbal Communication Skills": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Drug-use history": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Commute time/day": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Decision-making speed": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Excuse-Making tendency": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Peer-to-peer lending usage": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Eye-Contact avoidance score": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Faux Pas Recognition accuracy": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Conscientiousness (C)": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Use of Nature as a Stress Reliever": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Attitude toward learning": {
+        "score": 5,
+        "confidence": 0.9
+      },
+      "Conscientiousness Facets": {
+        "score": 3,
+        "confidence": 0.5
+      },
+      "Snacking Behavior": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Aura-color perception": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Sacred text engagement: Zohar (Kabbalah) study hours": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Motivational Drivers": {
+        "score": 3,
+        "confidence": 0.5
+      },
+      "Safety compliance": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Sensationalism": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Nationality": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Drollness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Cooperation": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Breakfast-skipping frequency": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "922. Sikh spiritual metric: Kirtan participation frequency": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Impulsivity": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Museum visits/year": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Choir participation years": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Delegation Ability": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "788. Kabbalah sephira balance: Tiferet": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Desire to influence others": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Vivacity": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Genialness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Cognitive measure: Working Memory Index": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Ethical practices": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "945. New-Age spiritual metric: Channeling sessions / year": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Civility": {
+        "score": 5,
+        "confidence": 0.9
+      },
+      "Sleep Apnea": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Classiness": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Control over situations": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Time outdoors/day": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Effeteness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Polygenic risk: cardiovascular disease": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Psychological construct: Identity Diffusion level": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Learning through movement": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Caffeine sensitivity gene": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Hatefulness": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Persistence": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Psychological construct: Perfectionistic Strivings": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Wake-time consistency": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Social-cognition variable: Mentalizing network activation": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Patriotism": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Leadership Styles": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Servility": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "742. I Ching hexagram 24 resonance level": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Enneagram Personality Types": {
+        "score": 1,
+        "confidence": 0.0
+      },
+      "Stress Recovery Ability": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Troubleshooting technical issues": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Defense-mechanism tendency: Introjection": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Irritability": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Travel-companions diversity": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Sacred text engagement: Quran surahs memorized": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Trust in others": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Gamified-finance-app usage": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Buddhist practice: Eightfold Path \u2013 Right Intention level": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Caffeine intake (mg/day)": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Comfort with Vulnerability": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Anticipativeness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Avoiding: Home-security-system presence": {
+        "score": 1,
+        "confidence": 0.5
+      },
+      "HEXACO domain: Honesty-Humility": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Eating Habits (Home-Cooked vs. Eating Out)": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Decision-Making Confidence": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Alignment with societal roles": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Connectedness: Belief in interconnections": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Quirkiness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Creative resilience": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Rapid cognitive processing": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Cordiality": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Types of Mindfulness Techniques Used": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Economic reasoning": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Conformity": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Pet-enrichment activities count": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Aestheticism": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Type of Support Preferred (Emotional vs. Practical)": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Mental Arithmetic Speed": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Patience: Resistance to anger": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Flawlessness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Self-Efficacy": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Computer Skills": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "899. Jewish spiritual metric: Shabbat candle-lighting consistency": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Spelling Accuracy": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "793. Sufi practice: Dhikr repetitions / day": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Peacefulness": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Doggedness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Decency": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Processed-food frequency": {
+        "score": 2,
+        "confidence": 0.6
+      }
+    },
+    "total_facets_scored": 377
+  },
+  {
+    "id": 2,
+    "scenario": "two friends arguing about a political topic",
+    "conversation": "Person A: I just don't get why you're still supporting the president, after everything they've done. All these scandals and broken promises, it's like they're not even serious about governance.\nPerson B: That's not fair, Sarah. You're just drinking the media's Kool-Aid. They've done some great things for the country, and you're just too naive to see it.\nPerson A: Naive? I've been paying attention to the news for years, and I know what I'm talking about. And by the way, it's not just the media saying these things, it's fact-checkers and experts.\nPerson B: Well, just because you're a critical thinker doesn't mean you have to be a cynic. Can't you just give them a chance to prove themselves? They've only been in office for two years.\nPerson A: Two years is a lifetime in politics. And in that time, they've done more damage than good. I'm not asking them to prove themselves, I'm asking them to keep their promises.\nPerson B: (frustrated) Sarah, you're so quick to give up on people. You're always expecting them to fail, and when they do, you say I told you so. Can't you just have a little faith?\nPerson A: (angrily) Faith? You want me to have faith in someone who's lied to me and the country repeatedly? No, I'm not going to do that. And by the way, I'm not giving up on people, I'm giving up on politicians who lie to me.\nPerson B: (hurt) Fine, if you're so smart, then go run for office yourself. See how easy it is to make decisions without anyone else's input.\nPerson A: (calmly, but still firm) I don't have to run for office to know that the president is a disaster. And just because we disagree doesn't mean I'm not a good friend to you.\nPerson B: (softening) I know, Sarah. I'm sorry. I just get really frustrated when I feel like you're not seeing the whole picture.",
+    "scores": {
+      "Risktaking": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Naivety": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Acidity": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Democratic Leadership": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Common-sense": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Hesitation": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Discontentment": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Overprotectiveness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Merriness": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Emotionalism": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Self-improvement": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Statistical Reasoning": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Assertiveness and control in relationships": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Cunningness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Adventure-Seeking Behavior": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Compassion Fatigue": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Moroseness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Specialist": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Aloofness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Genuine": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Determinedness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "HonestyHumility": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Relationship Building Themes": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Pure Challenge": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Numerical Reasoning Subcomponents": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Openness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "SelfEsteem": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Comparing alphanumeric data": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Big-heartedness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Compulsive activities": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Disrespect": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "FSH level": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Self Perspective": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Desperation": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Affiliation Motivation": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Anatomy knowledge": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Passive-Aggressive": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Presence of Spiritual Pain": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Role of Spirituality in Community Involvement": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Structure": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Eco-tourism trips": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Chivalrousness": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Pilgrimage participation count": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Mindfulness facet: Observing": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Submissiveness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Training-cycle length": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Sensitiveness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Negative Affect Frequency": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Innovation and Creativity Components": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Achievement Motivation": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Feedback-giving frequency": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Dance-cardio sessions": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Enthusiasm": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Psychological construct: Social Desirability tendency": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Inattentiveness": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Unassertiveness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Decision-making decisiveness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Sense-of-coherence score": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Justice-mindedness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Subscription count": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Depression Symptoms": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Spatial perception": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Brevity": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Orderliness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Multiculturalism": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Creative risk-taking tendency": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Inefficiency": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Network basics": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Alphabetical filing skills": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Work Styles": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Character strength: Perseverance": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Competition": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Logical Sequence Identification": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Sustainable-transport usage": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Hardworking": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Emotional-intelligence measure: Impulsiveness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Dishonesty": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Preferred epistemology": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Memory for Sounds": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Sportsmanship rating": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Immaturity": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Health-literacy level": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Estimating Calculations": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Depression: Feelings of sadness and hopelessness": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Synthesis of information": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Leadership Potential": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Ethical standards": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "High-spiritedness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Critical reasoning": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Sleep-disorder diagnosis": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Listening Skills Subcomponents:": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Collaboration": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Precision of Movements": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Social Boldness": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Auditory memory": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Psychomotor Ability Subcomponents:": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Organized lifestyle": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Skill-endorsements count": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Mysteriousness": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Cultural Identity": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Intrinsic Motivation": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Impartial-mindedness": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Burnout Symptoms": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Holiness": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Selfcontrol": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "SelfDirectedness": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Encouraging participation": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Impracticalness": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Meeting Deadlines": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Data Analysis": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Social Interaction Skills": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Psychoticism": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Ethical leadership rating": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Slothfulness": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Happiness": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Contentment Levels": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Neuroticism": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Desire for excellence": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Perceiving": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Liberalism": {
+        "score": 3,
+        "confidence": 0.0
+      },
+      "Inversion comfort level": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Affection": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Numeric Filing Skills": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Martyrdom": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Parathyroid-hormone level": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Seeking approval": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Judging (J)": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Big Five facet Openness \u2013 Artistic Interests": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Operant-Learning rate": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Need for Achievement level": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Cantankerousness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Material properties knowledge": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Hostility": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Independence": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "800. Sufi practice: Sufi retreat attendance count": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Chromatin-accessibility score": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "644. Spiritual virtue: Humility practice index": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "754. I Ching hexagram 36 resonance level": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Well-being component: Engagement": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Need for social interaction": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Peer-collaboration hours": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Arts and Humanities": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "596. Religious practice: Quran khatam cycles per year": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "926. Bah\u00e1\u2019\u00ed spiritual metric: Ridv\u00e1n festival participation": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Compassion": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Information Retention": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Eye-contact duration": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Self-righteousness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "General Mood and Attitude": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Serotonin transporter availability": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Contribution to Group Goals": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Dignity": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Evaluating Solutions": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Input": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Discreteness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Reiki sessions/year": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Rising sign is Scorpio": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Social Intelligence": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Bravery": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Childhood Experiences": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Data-sharing consent level": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Vision-check frequency": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Physical-violence exposure": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Macronutrient ratio: fat": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Cooking and Culinary Arts": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Language use": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Dance-style mastery diversity": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Satya Adherence": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Ethnocentrism": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Emotional Boundaries": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Creativity in solutions": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Hope scale": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Walking meditation practice frequency": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Depression (DEP)": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Understanding Mathematical Concepts": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Hypomania (Ma)": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Goal-Directed Behavior": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Depth of Emotional Connections": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Binding foundations index": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Ego Dissolution Frequency": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Activator": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Gnostic spiritual metric: Archon meditation frequency": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Exemplariness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Moral and Ethical Parameters: Submission": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Moral and Ethical Parameters: Frankness": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Psychological construct: Psychological Safety climate": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Psychological construct: Self-Compassion total": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Psychological construct: Executive-Function composite": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Rebelliousness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Volunteer Work": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Intellect": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Use of Mathematical Formulas": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Coarseness": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Behavioral Tendencies and Subcomponents: Sensitivity": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Behavioral Tendencies and Subcomponents: Divided Attention Ability": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Psychological construct: Acculturative Stress score": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Behavioral Tendencies and Subcomponents: Dauntlessness": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Behavioral Tendencies and Subcomponents: Concreteness": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Behavioral Tendencies and Subcomponents: Hysteria (Hy)": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Jewish spiritual metric: Sukkot lulav-shaking days": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Sentence Structure": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Esteem Needs": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Understanding mechanical concepts": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Auditory Memory Recall": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Storytelling proficiency": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Music-lessons years": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Warmheartedness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Self-effacement": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Outspokenness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Sleep-environment temperature": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Comprehension of spoken information": {
+        "score": 5,
+        "confidence": 0.95
+      },
+      "Blissfulness": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Sequential Memory Recall": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Withdrawnness": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Yoga discipline hours / week": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Conservatism": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Adaptability and Flexibility Subcomponents": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Vrata vows observed / year": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Ardency": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Aesthetic Appreciation": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Transactional Leadership": {
+        "score": 3,
+        "confidence": 0.5
+      },
+      "Value orientation: Universalism": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Perseverance": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Regularity of Self-Reflection": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Controlling Reactions": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Cultural Intelligence \u2013 Behavioral": {
+        "score": 3,
+        "confidence": 0.5
+      },
+      "Metabolic Rate": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Dietary Habits": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Significance: Desire to make an impact": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Resilience-Trait score": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Boredom Susceptibility": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Consummatory Pleasure scale": {
+        "score": 3,
+        "confidence": 0.5
+      },
+      "I Ching hexagram 5 resonance level": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Macronutrient ratio: carbs": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Passport-stamps count": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Local-food sourcing %": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Patient care orientation": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Soft-skill training hours": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Graffiti appreciation": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Preference for Home-Cooked vs Restaurant Meals": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Immune-response age": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Cognitive Empathy": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Kink-interest diversity": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Adaptability and Flexibility": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Judging Consequences": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Harmfulness": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Affinity": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Abasement": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Chronic pain presence": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Discernment practice hours/week": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Initiative": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Courageousness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Joyfulness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Suspicion": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Basophil count": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Attachment avoidance score": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Time Orientation End Points": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Brazenness": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Talkativeness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Equitableness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Ideas generated/day": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Originality": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Fearfulness: Fear of physical dangers": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Dance rehearsal hours/week": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Practice frequency: Mantra meditation": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Public-transport km/week": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Social Desirability Bias": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "761. I Ching hexagram 43 resonance level": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Disagreeableness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Participation in Community Activities": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Impudence": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Analogies": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Clumsiness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Tendency Toward Compromise or Confrontation": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "737. I Ching hexagram 19 resonance level": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Robotics-interaction frequency": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Casual lifestyle": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Collectedness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Reliance on context": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Delegation skills": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "767. I Ching hexagram 49 resonance level": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Managing emotions": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Scripture memorization verses": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Conventional": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "890. Hindu spiritual metric: Bhagavad-Gita study hours": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Open-source contributions": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Psychological construct: Social Conformity tendency": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Individuality": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "740. I Ching hexagram 22 resonance level": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Attachment style: Secure": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Intelligence Quotient (IQ)": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Blog-subscriber count": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Non-Verbal Communication Skills": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Drug-use history": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Commute time/day": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Decision-making speed": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Psychological construct: Excuse-Making tendency": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Peer-to-peer lending usage": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Psychological construct: Eye-Contact avoidance score": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Social-cognition variable: Faux Pas Recognition accuracy": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Conscientiousness (C)": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "Use of Nature as a Stress Reliever": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Attitude toward learning": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Conscientiousness Facets: Honesty-humility trait score": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Digital-nomad months": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "516. Religious coping \u2013 Negative": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Snacking Behavior": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Aura-color perception": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "638. Sacred text engagement: Zohar (Kabbalah) study hours": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Motivational Drivers: Cloud-backup frequency": {
+        "score": 2,
+        "confidence": 0.3
+      },
+      "Learning Style": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "872. Islamic practice: Seerah study hours": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Safety compliance": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Sensationalism": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Nationality": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Drollness": {
+        "score": 2,
+        "confidence": 0.3
+      },
+      "Cooperation": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Breakfast-skipping frequency": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "922. Sikh spiritual metric: Kirtan participation frequency": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Impulsivity": {
+        "score": 2,
+        "confidence": 0.4
+      },
+      "Museum visits/year": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Choir participation years": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Delegation Ability": {
+        "score": 3,
+        "confidence": 0.6
+      },
+      "788. Kabbalah sephira balance: Tiferet": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Desire to influence others": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Vivacity": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Genialness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Cognitive measure: Working Memory Index": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Ethical practices": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "New-Age spiritual metric: Channeling sessions / year": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Civility": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Sleep Apnea": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Classiness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Control over situations": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Time outdoors/day (h)": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Effeteness": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Polygenic risk: cardiovascular disease": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Psychological construct: Identity Diffusion level": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Learning through movement": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Caffeine sensitivity gene": {
+        "score": 1,
+        "confidence": 0.3
+      },
+      "Hatefulness": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Persistence": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Psychological construct: Perfectionistic Strivings": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Wake-time consistency": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Numerical Reasoning": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Social-cognition variable: Mentalizing network activation": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Patriotism": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Leadership Styles": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Servility": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "I Ching hexagram 24 resonance level": {
+        "score": 1,
+        "confidence": 0.4
+      },
+      "Enneagram Personality Types": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Stress Recovery Ability": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Troubleshooting technical issues": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Defense-mechanism tendency: Introjection": {
+        "score": 3,
+        "confidence": 0.7
+      },
+      "Irritability": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Travel-companions diversity": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Sacred text engagement: Quran surahs memorized": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Trust in others": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Gamified-finance-app usage": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Buddhist practice: Eightfold Path \u2013 Right Intention level": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Caffeine intake (mg/day)": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Comfort with Vulnerability": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Anticipativeness": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Avoiding: Home-security-system presence": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "HEXACO domain: Honesty-Humility": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Eating Habits (Home-Cooked vs. Eating Out)": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Decision-Making Confidence": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Alignment with societal roles": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Connectedness: Belief in interconnections": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Quirkiness": {
+        "score": 2,
+        "confidence": 0.7
+      },
+      "Creative resilience": {
+        "score": 3,
+        "confidence": 0.9
+      },
+      "Rapid cognitive processing": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Cordiality": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Types of Mindfulness Techniques Used": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Economic reasoning": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Conformity": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Pet-enrichment activities count": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Aestheticism": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Type of Support Preferred (Emotional vs. Practical)": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Mental Arithmetic Speed": {
+        "score": 2,
+        "confidence": 0.5
+      },
+      "Patience: Resistance to anger": {
+        "score": 3,
+        "confidence": 0.8
+      },
+      "Flawlessness": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Self-Efficacy": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Computer Skills": {
+        "score": 1,
+        "confidence": 0.2
+      },
+      "Jewish spiritual metric: Shabbat candle-lighting consistency": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Spelling Accuracy": {
+        "score": 5,
+        "confidence": 0.9
+      },
+      "Sufi practice: Dhikr repetitions / day": {
+        "score": 1,
+        "confidence": 0.1
+      },
+      "Peacefulness": {
+        "score": 2,
+        "confidence": 0.6
+      },
+      "Doggedness": {
+        "score": 4,
+        "confidence": 0.8
+      },
+      "Decency": {
+        "score": 4,
+        "confidence": 0.9
+      },
+      "Processed-food frequency": {
+        "score": 1,
+        "confidence": 0.1
+      }
+    },
+    "total_facets_scored": 391
+  }
+]
