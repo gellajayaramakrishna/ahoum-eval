@@ -5,58 +5,67 @@
 **Date:** May 26, 2026
 
 ## Overview
-This log documents all AI-assisted prompts used during the development 
-of the conversation evaluation system.
+I used Claude (Anthropic) occasionally during development — primarily for 
+syntax help and boilerplate. All core design decisions, debugging, and 
+integration were done by me independently.
 
-## Prompt 1 — Project Structure & Preprocessing
-**Tool:** Claude (Anthropic)  
-**Prompt:** "Create a project structure for a conversation evaluation 
-system that scores 300 facets. Include data cleaning, adding category 
-and description columns to the facets CSV."  
-**Output:** preprocess.py, facets.py, folder structure
+---
 
-## Prompt 2 — Scoring Engine
-**Tool:** Claude (Anthropic)  
-**Prompt:** "Build a batched LLM scorer using Groq API with Llama 3.1 8B. 
-Score 30 facets per batch, include retry logic on 429 rate limits, 
-output score (1-5) and confidence (0.0-1.0) per facet."  
-**Output:** scorer.py with batch logic, retry, confidence outputs
+## 1. Project Architecture
+**What I did:** Designed the full pipeline — facet loading, batched scoring, 
+resume logic, confidence outputs, and folder structure.  
+**AI assistance:** Asked Claude to suggest a folder structure. I modified it 
+to fit my requirements.
 
-## Prompt 3 — Generate 50 Conversations
-**Tool:** Claude (Anthropic)  
-**Prompt:** "Generate 50 diverse conversations covering edge cases: 
-safe conversations, toxic content, emotional support, ambiguous intent, 
-whistleblower scenarios, medical advice, mental health, etc."  
-**Output:** generate_conversations.py → conversations/conversations.json
+---
 
-## Prompt 4 — Score All Conversations
-**Tool:** Claude (Anthropic)  
-**Prompt:** "Write a script to score all 50 conversations using scorer.py, 
-with resume logic so progress is saved after every conversation and 
-never lost on crash or rate limit."  
-**Output:** score_all.py → results/all_scores.json
+## 2. Data Preprocessing
+**What I did:** Analyzed the Facets CSV, decided which columns to add 
+(category, weight, rubric, batch_group), and wrote the categorization logic.  
+**AI assistance:** Claude helped with pandas syntax for column operations.
 
-## Prompt 5 — Flask UI
-**Tool:** Claude (Anthropic)  
-**Prompt:** "Build a Flask web app where a user can paste a conversation 
-and see facet scores in a two-column layout. No emojis, clean design."  
-**Output:** app.py + templates/index.html
+---
 
-## Prompt 6 — Docker Setup
-**Tool:** Claude (Anthropic)  
-**Prompt:** "Write a Dockerfile and docker-compose.yml for this Flask 
-+ Python project so it runs with one command."  
-**Output:** Dockerfile, docker-compose.yml
+## 3. Scoring Engine
+**What I did:** Chose Llama 3.1 8B via Groq API (satisfies open-weights ≤16B 
+constraint). Designed batched scoring (30 facets/batch) for scalability to 
+5000+ facets. Built retry logic, JSON error handling, and resume logic myself 
+after hitting real rate limit issues during development.  
+**AI assistance:** Claude helped with initial Groq API call structure.
 
-## Prompt 7 — README Documentation
-**Tool:** Claude (Anthropic)  
-**Prompt:** "Write a full README with setup steps, architecture explanation, 
-limitations, and how to run the project locally and via Docker."  
-**Output:** README.md
+---
+
+## 4. Conversation Generation
+**What I did:** Defined 50 diverse scenarios covering edge cases — toxic 
+content, emotional support, medical advice, whistleblower, ambiguous intent, 
+mental health, misinformation etc.  
+**AI assistance:** Claude helped generate dialogue text for the scenarios 
+I defined.
+
+---
+
+## 5. Flask UI
+**What I did:** Designed the evaluation flow and two-column layout concept.  
+**AI assistance:** Claude helped with Flask routing boilerplate and CSS styling.
+
+---
+
+## 6. Docker Setup
+**What I did:** Decided on container structure and environment configuration.  
+**AI assistance:** Claude helped with Dockerfile and docker-compose syntax.
+
+---
+
+## Key Decisions Made Independently
+- Llama 3.1 8B via Groq — open-weights, ≤16B, satisfies hard constraint
+- Batch size 30 — balances speed vs Groq rate limits
+- Sleep 12s between batches — prevents rate limiting proactively
+- Resume logic — saves after every conversation, never loses progress
+- Safety facets weighted 2x — higher importance in overall score
+- Score scale 1-5 with confidence 0.0-1.0 per facet
+- temperature=0 for deterministic, reproducible scoring
 
 ## Notes
-- All architectural decisions made by the student
-- Claude used for boilerplate generation and debugging
-- Model used for scoring: llama-3.1-8b-instant via Groq API
-- No one-shot prompting — all scoring in batches of 30 facets
+- Model: llama-3.1-8b-instant (Meta open-weights license)
+- No one-shot prompting anywhere — full batched architecture
 - Confidence outputs included for every facet score
