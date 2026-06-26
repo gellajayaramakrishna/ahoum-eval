@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahoum — Conversation Evaluator</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #080c12;
+      --surface: #0e1420;
+      --border: #1c2535;
+      --border-bright: #2a3a52;
+      --text: #e2e8f0;
+      --text-muted: #64748b;
+      --text-dim: #334155;
+      --accent: #3b82f6;
+      --accent-dim: #1d4ed8;
+      --accent-glow: rgba(59,130,246,0.15);
+      --green: #10b981;
+      --yellow: #f59e0b;
+      --orange: #f97316;
+      --red: #ef4444;
+      --mono: 'DM Mono', monospace;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 0 48px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      background: rgba(8,12,18,0.92);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-mark svg {
+      width: 16px;
+      height: 16px;
+      fill: white;
+    }
+
+    .logo-text {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--text);
+    }
+
+    .logo-text span {
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .header-meta {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-dim);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ── MAIN LAYOUT ── */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 48px 80px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--accent);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero p {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 520px;
+      line-height: 1.7;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 32px;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .stat-val {
+      font-family: var(--mono);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    .stat-divider {
+      width: 1px;
+      background: var(--border);
+      align-self: stretch;
+    }
+
+    /* ── TWO COL LAYOUT ── */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    /* ── PANEL ── */
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .panel-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .panel-title {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-family: var(--mono);
+    }
+
+    .panel-body { padding: 20px; }
+
+    /* ── TEXTAREA ── */
+    textarea {
+      width: 100%;
+      height: 220px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      padding: 14px 16px;
+      font-size: 13px;
+      font-family: var(--mono);
+      line-height: 1.7;
+      resize: vertical;
+      transition: border-color 0.2s;
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    textarea::placeholder { color: var(--text-dim); }
+
+    /* ── BUTTON ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 14px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 11px 24px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: var(--sans);
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      letter-spacing: 0.02em;
+    }
+
+    .btn:hover { background: var(--accent-dim); }
+    .btn:active { transform: scale(0.98); }
+    .btn:disabled { background: var(--border-bright); color: var(--text-muted); cursor: not-allowed; transform: none; }
+
+    .btn-icon {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    /* ── STATUS ── */
+    #status {
+      margin-top: 12px;
+      font-size: 12px;
+      font-family: var(--mono);
+      color: var(--text-muted);
+      min-height: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 1.2s infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ── MODEL INFO ── */
+    .model-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 10px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .model-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    /* ── RESULTS PANEL ── */
+    #resultsPanel { display: none; }
+
+    .results-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .r-stat {
+      background: var(--bg);
+      padding: 14px 16px;
+      text-align: center;
+    }
+
+    .r-stat-val {
+      font-family: var(--mono);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .r-stat-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── FILTER TABS ── */
+    .filter-tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-family: var(--mono);
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-muted);
+      transition: all 0.15s;
+      letter-spacing: 0.04em;
+    }
+
+    .tab:hover { border-color: var(--border-bright); color: var(--text); }
+    .tab.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+    /* ── FACET LIST ── */
+    .facet-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-height: 480px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .facet-row {
+      display: grid;
+      grid-template-columns: 1fr 120px 32px;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      transition: border-color 0.15s;
+    }
+
+    .facet-row:hover { border-color: var(--border-bright); }
+
+    .facet-name {
+      font-size: 12px;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: var(--mono);
+    }
+
+    .bar-wrap {
+      height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 2px;
+      transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    .score-badge {
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text);
+      text-align: right;
+    }
+
+    .conf-text {
+      font-size: 10px;
+      color: var(--text-dim);
+      font-family: var(--mono);
+      margin-top: 2px;
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 2px; }
+
+    /* ── LOADING SPINNER ── */
+    .spinner {
+      width: 12px;
+      height: 12px;
+      border: 2px solid var(--border-bright);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: none;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── EMPTY STATE ── */
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-dim);
+    }
+
+    .empty-state p {
+      font-size: 13px;
+      font-family: var(--mono);
+      margin-top: 8px;
+    }
+
+    /* ── FADE IN ── */
+    .fade-in {
+      animation: fadeIn 0.3s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* ── GUIDED CONVERSATION BUILDER ── */
+    .mode-toggle {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .mode-btn {
+      flex: 1;
+      padding: 10px 14px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-muted);
+      font-family: var(--sans);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .mode-btn.active {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    .builder-setup {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .builder-setup select,
+    .speaker-name-row input[type="text"] {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      padding: 8px 10px;
+      font-family: var(--sans);
+      font-size: 13px;
+    }
+    .speaker-name-row input[type="text"]::placeholder {
+      color: var(--text-dim);
+    }
+    .speaker-name-row input[type="text"]:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .speaker-pills {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .speaker-pill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-family: var(--mono);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .speaker-pill.active {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+      color: var(--text);
+    }
+    .speaker-name-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+
+    .transcript-preview {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      max-height: 260px;
+      overflow-y: auto;
+      margin-bottom: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .transcript-line {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .transcript-line .speaker-label {
+      font-family: var(--mono);
+      color: var(--accent);
+      font-weight: 500;
+      flex-shrink: 0;
+      min-width: 70px;
+    }
+    .transcript-line .line-text { flex: 1; color: var(--text); }
+    .transcript-line .line-actions {
+      display: flex;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .transcript-line .line-actions button {
+      background: none;
+      border: none;
+      color: var(--text-dim);
+      cursor: pointer;
+      font-size: 12px;
+      padding: 2px 4px;
+    }
+    .transcript-line .line-actions button:hover { color: var(--text); }
+    .transcript-empty { color: var(--text-dim); font-size: 13px; font-style: italic; }
+
+    .turn-input-row {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .turn-input-row textarea {
+      height: 70px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      opacity: 0.5;
+    }
+    .turn-input-row textarea.active-turn {
+      opacity: 1;
+      background: var(--bg);
+      border-color: var(--accent);
+    }
+    .turn-input-row .turn-label {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      min-width: 70px;
+      padding-top: 10px;
+      flex-shrink: 0;
+    }
+    .builder-meta {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .finish-btn {
+      margin-top: 10px;
+      background: var(--green);
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 16 16"><path d="M2 3h12v2H2zm0 4h8v2H2zm0 4h10v2H2z"/></svg>
+    </div>
+    <div class="logo-text">Ahoum <span>/ Conversation Evaluator</span></div>
+  </div>
+  <div class="header-meta">Llama 3.1 · 399 Facets · Open-weights</div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-label">Conversation Benchmark v1.0</div>
+    <h1>Score any conversation across<br><em>399 distinct facets</em></h1>
+    <p>A production-ready evaluation system that analyses linguistic quality, pragmatics, safety, and emotion using open-weights LLMs. Scales to 5000+ facets without architectural changes.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-val">399</div>
+        <div class="stat-label">Facets</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-val">1–5</div>
+        <div class="stat-label">Score Scale</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-val">8B</div>
+        <div class="stat-label">Model Params</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-val">5000+</div>
+        <div class="stat-label">Scalable To</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TWO COLUMN -->
+  <div class="layout">
+
+    <!-- LEFT — INPUT -->
+    <div>
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Input</span>
+          <div class="model-tag">
+            <div class="model-dot"></div>
+            llama-3.1-8b-instant
+          </div>
+        </div>
+        <div class="panel-body">
+
+          <!-- Mode toggle -->
+          <div class="mode-toggle">
+            <button class="mode-btn active" id="modeBuilderBtn" onclick="setMode('builder')">Build Conversation</button>
+            <button class="mode-btn" id="modeRawBtn" onclick="setMode('raw')">Paste Raw Text</button>
+          </div>
+
+          <!-- BUILDER MODE -->
+          <div id="builderMode">
+            <div class="builder-setup" id="builderSetup">
+              <select id="speakerCount" onchange="setupSpeakers()">
+                <option value="2">2 speakers</option>
+                <option value="3">3 speakers</option>
+                <option value="4">4 speakers</option>
+                <option value="5">5 speakers</option>
+              </select>
+            </div>
+            <div class="speaker-name-row" id="speakerNameRow"></div>
+
+            <div class="builder-meta" id="builderMeta">0 turns · 0 words</div>
+
+            <div class="transcript-preview" id="transcriptPreview">
+              <div class="transcript-empty">Your conversation will appear here as you add turns...</div>
+            </div>
+            <div class="speaker-pills" id="speakerPills"></div>
+            <div class="turn-input-row">
+            
+              <span class="turn-label" id="activeSpeakerLabel">—</span>
+              <textarea id="turnInput" class="active-turn" placeholder="Type this speaker's line, or paste it, then press Enter..."></textarea>
+            </div>
+            <button class="finish-btn" onclick="finishConversation()">Finish Conversation</button>
+          </div>
+
+          <!-- RAW PASTE MODE -->
+          <div id="rawMode" style="display:none;">
+            <textarea id="convInput" placeholder="Person A: I don't think I can do this anymore...
+Person B: What do you mean? You've been doing great.
+Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
+          </div>
+
+          <button class="btn" id="scoreBtn" onclick="scoreConversation()" style="margin-top:14px;">
+            <svg class="btn-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm1 10H7V7h2v4zm0-6H7V3h2v2z"/></svg>
+            Analyse Conversation
+          </button>
+          <div class="spinner" id="spinner"></div>
+          <div id="status"></div>
+        </div>
+      </div>
+
+      <!-- HOW IT WORKS -->
+      <div class="panel" style="margin-top:16px;">
+        <div class="panel-header">
+          <span class="panel-title">How It Works</span>
+        </div>
+        <div class="panel-body" style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="font-family:var(--mono);font-size:11px;color:var(--accent);min-width:20px;padding-top:1px;">01</div>
+            <div>
+              <div style="font-size:13px;font-weight:600;margin-bottom:2px;">Batch Processing</div>
+              <div style="font-size:12px;color:var(--text-muted);">Facets split into batches of 30 — no one-shot prompting. Scales to 5000+ facets without redesign.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="font-family:var(--mono);font-size:11px;color:var(--accent);min-width:20px;padding-top:1px;">02</div>
+            <div>
+              <div style="font-size:13px;font-weight:600;margin-bottom:2px;">Open-weights Model</div>
+              <div style="font-size:12px;color:var(--text-muted);">Uses Llama 3.1 8B via Groq — open-weights, under 16B parameters, fast inference.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="font-family:var(--mono);font-size:11px;color:var(--accent);min-width:20px;padding-top:1px;">03</div>
+            <div>
+              <div style="font-size:13px;font-weight:600;margin-bottom:2px;">Confidence Scores</div>
+              <div style="font-size:12px;color:var(--text-muted);">Every facet score includes a confidence value (0.0–1.0) indicating model certainty.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT — RESULTS -->
+    <div>
+      <div class="panel" id="resultsPanel">
+        <div class="panel-header">
+          <span class="panel-title">Results</span>
+          <span id="totalBadge" style="font-family:var(--mono);font-size:11px;color:var(--text-muted);"></span>
+        </div>
+        <div class="panel-body">
+          <div class="results-stats" id="statsRow"></div>
+          <div class="filter-tabs" id="filterTabs">
+            <button class="tab active" onclick="filterFacets('all', this)">All</button>
+            <button class="tab" onclick="filterFacets('high', this)">High (4–5)</button>
+            <button class="tab" onclick="filterFacets('mid', this)">Mid (3)</button>
+            <button class="tab" onclick="filterFacets('low', this)">Low (1–2)</button>
+          </div>
+          <div class="facet-list" id="facetList"></div>
+        </div>
+      </div>
+
+      <!-- EMPTY STATE -->
+      <div class="panel" id="emptyPanel">
+        <div class="panel-body">
+          <div class="empty-state">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <p>Paste a conversation and click<br>Analyse to see results</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+  let allScores = {};
+
+  // ───── GUIDED BUILDER STATE ─────
+  let builderMode = "builder";   // "builder" or "raw"
+  let speakers = ["Person A", "Person B"];
+  let turns = [];                // [{speaker, text}, ...]
+  let activeSpeakerIdx = 0;
+
+  function setMode(mode) {
+    builderMode = mode;
+    document.getElementById("modeBuilderBtn").classList.toggle("active", mode === "builder");
+    document.getElementById("modeRawBtn").classList.toggle("active", mode === "raw");
+    document.getElementById("builderMode").style.display = mode === "builder" ? "block" : "none";
+    document.getElementById("rawMode").style.display = mode === "raw" ? "block" : "none";
+  }
+
+  function setupSpeakers() {
+    if (turns.length > 0) {
+      const confirmReset = confirm("Changing the number of speakers will clear your current conversation. Continue?");
+      if (!confirmReset) {
+        document.getElementById("speakerCount").value = speakers.length;
+        return;
+      }
+    }
+    turns = [];
+    renderTranscript();
+
+    const count = parseInt(document.getElementById("speakerCount").value);
+    const row = document.getElementById("speakerNameRow");
+    row.innerHTML = "";
+    speakers = [];
+    for (let i = 0; i < count; i++) {
+      const defaultName = "Person " + String.fromCharCode(65 + i);
+      speakers.push(defaultName);
+      const input = document.createElement("input");
+      input.type = "text";
+      input.placeholder = defaultName;
+      input.id = "speakerName" + i;
+      input.oninput = () => {
+        speakers[i] = input.value.trim() || defaultName;
+        updateActiveLabel();
+        renderSpeakerPills();
+      };
+      row.appendChild(input);
+    }
+    activeSpeakerIdx = 0;
+    updateActiveLabel();
+    renderSpeakerPills();
+  }
+
+  function updateActiveLabel() {
+    document.getElementById("activeSpeakerLabel").textContent = speakers[activeSpeakerIdx] + ":";
+  }
+
+  function setActiveSpeaker(idx) {
+    activeSpeakerIdx = idx;
+    updateActiveLabel();
+    renderSpeakerPills();
+    document.getElementById("turnInput").focus();
+  }
+
+  function renderSpeakerPills() {
+    const container = document.getElementById("speakerPills");
+    container.innerHTML = speakers.map((name, i) => `
+      <button class="speaker-pill ${i === activeSpeakerIdx ? 'active' : ''}" onclick="setActiveSpeaker(${i})">
+        ${name}
+      </button>
+    `).join("");
+  }
+
+  function submitTurn() {
+    const input = document.getElementById("turnInput");
+    const text = input.value.trim();
+    if (!text) return;
+
+    turns.push({ speaker: speakers[activeSpeakerIdx], text });
+    input.value = "";
+    activeSpeakerIdx = (activeSpeakerIdx + 1) % speakers.length;
+    updateActiveLabel();
+    renderTranscript();
+    renderSpeakerPills();
+  }
+
+  function setActiveSpeaker(idx) {
+    activeSpeakerIdx = idx;
+    updateActiveLabel();
+    renderSpeakerPills();
+    document.getElementById("turnInput").focus();
+  }
+
+  function renderSpeakerPills() {
+    const container = document.getElementById("speakerPills");
+    container.innerHTML = speakers.map((name, i) => `
+      <button class="speaker-pill ${i === activeSpeakerIdx ? 'active' : ''}" onclick="setActiveSpeaker(${i})">
+        ${name}
+      </button>
+    `).join("");
+  }
+
+  function renderTranscript() {
+    const preview = document.getElementById("transcriptPreview");
+    if (turns.length === 0) {
+      preview.innerHTML = `<div class="transcript-empty">Your conversation will appear here as you add turns...</div>`;
+    } else {
+      preview.innerHTML = turns.map((t, i) => `
+        <div class="transcript-line">
+          <span class="speaker-label">${t.speaker}:</span>
+          <span class="line-text" id="line-text-${i}">${t.text}</span>
+          <span class="line-actions">
+            <button onclick="editTurn(${i})">edit</button>
+            <button onclick="deleteTurn(${i})">delete</button>
+          </span>
+        </div>
+      `).join("");
+    }
+    const wordCount = turns.reduce((sum, t) => sum + t.text.split(/\s+/).length, 0);
+    document.getElementById("builderMeta").textContent = `${turns.length} turns · ${wordCount} words`;
+  }
+
+  function editTurn(i) {
+    const newText = prompt("Edit this line:", turns[i].text);
+    if (newText !== null && newText.trim()) {
+      turns[i].text = newText.trim();
+      renderTranscript();
+    }
+  }
+
+  function deleteTurn(i) {
+    turns.splice(i, 1);
+    renderTranscript();
+  }
+
+  function finishConversation() {
+    if (turns.length === 0) { alert("Add at least one turn first."); return; }
+    const built = turns.map(t => `${t.speaker}: ${t.text}`).join("\n");
+    // Push the built conversation into the raw textarea so scoreConversation() can read it unchanged
+    document.getElementById("convInput").value = built;
+    setMode("raw");
+  }
+
+  // Enter key submits the active turn instead of adding a newline
+  document.addEventListener("DOMContentLoaded", () => {
+    setupSpeakers();
+    const turnInput = document.getElementById("turnInput");
+    if (turnInput) {
+      turnInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && !e.shiftKey) {
+          e.preventDefault();
+          submitTurn();
+        }
+      });
+    }
+  });
+
+  function getColor(score) {
+    if (score >= 5) return "#10b981";
+    if (score >= 4) return "#34d399";
+    if (score >= 3) return "#f59e0b";
+    if (score >= 2) return "#f97316";
+    return "#ef4444";
+  }
+
+  async function scoreConversation() {
+    const conv = document.getElementById("convInput").value.trim();
+    if (!conv) { alert("Please paste a conversation first."); return; }
+
+    const btn = document.getElementById("scoreBtn");
+    const status = document.getElementById("status");
+    const spinner = document.getElementById("spinner");
+
+    btn.disabled = true;
+    btn.innerHTML = `<svg class="btn-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm1 10H7V7h2v4zm0-6H7V3h2v2z"/></svg> Analysing...`;
+    spinner.style.display = "block";
+    status.innerHTML = `<div class="status-dot"></div> Starting...`;
+
+    document.getElementById("resultsPanel").style.display = "none";
+    document.getElementById("emptyPanel").style.display = "block";
+
+    try {
+      // Step 1: kick off the job — server responds immediately with a job_id
+      const startRes = await fetch("/score", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ conversation: conv })
+      });
+      const startData = await startRes.json();
+      if (startData.error) { status.textContent = "Error: " + startData.error; return; }
+
+      const jobId = startData.job_id;
+
+      // Step 2: poll /status/<job_id> until it's done, updating progress live
+      const data = await pollJob(jobId, status);
+
+      if (data.error) { status.textContent = "Error: " + data.error; return; }
+
+      allScores = data.result.scores;
+      renderResults(data.result.scores, data.result.total);
+      status.innerHTML = `<div style="width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0"></div> Complete — ${data.result.total} facets scored`;
+
+    } catch(e) {
+      status.textContent = "Error: " + e.message;
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = `<svg class="btn-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm1 10H7V7h2v4zm0-6H7V3h2v2z"/></svg> Analyse Conversation`;
+      spinner.style.display = "none";
+    }
+  }
+
+  function pollJob(jobId, statusEl) {
+    return new Promise((resolve, reject) => {
+      const interval = setInterval(async () => {
+        try {
+          const res = await fetch(`/status/${jobId}`);
+          const job = await res.json();
+
+          if (job.status === "running") {
+            const pct = job.total ? `${job.done}/${job.total} batches` : "warming up...";
+            statusEl.innerHTML = `<div class="status-dot"></div> Scoring — ${pct}`;
+          } else if (job.status === "complete") {
+            clearInterval(interval);
+            resolve(job);
+          } else if (job.status === "error") {
+            clearInterval(interval);
+            resolve({ error: job.error });
+          }
+        } catch (e) {
+          clearInterval(interval);
+          reject(e);
+        }
+      }, 1500);
+    });
+  }
+
+  function renderResults(scores, total) {
+    const values = Object.values(scores).map(s => s.score);
+    const avg = (values.reduce((a,b) => a+b, 0) / values.length).toFixed(1);
+    const high = values.filter(s => s >= 4).length;
+    const low = values.filter(s => s <= 2).length;
+
+    document.getElementById("statsRow").innerHTML = `
+      <div class="r-stat"><div class="r-stat-val">${total}</div><div class="r-stat-label">Scored</div></div>
+      <div class="r-stat"><div class="r-stat-val">${avg}</div><div class="r-stat-label">Average</div></div>
+      <div class="r-stat"><div class="r-stat-val" style="color:var(--green)">${high}</div><div class="r-stat-label">High</div></div>
+      <div class="r-stat"><div class="r-stat-val" style="color:var(--red)">${low}</div><div class="r-stat-label">Low</div></div>
+    `;
+
+    document.getElementById("totalBadge").textContent = total + " facets";
+    renderFacets(scores);
+
+    document.getElementById("emptyPanel").style.display = "none";
+    document.getElementById("resultsPanel").style.display = "block";
+    document.getElementById("resultsPanel").classList.add("fade-in");
+
+    // Reset filter tabs
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    document.querySelector(".tab").classList.add("active");
+  }
+
+  function renderFacets(scores) {
+    const list = document.getElementById("facetList");
+    list.innerHTML = "";
+    for (const [facet, data] of Object.entries(scores)) {
+      const pct = (data.score / 5) * 100;
+      const color = getColor(data.score);
+      const conf = Math.round((data.confidence || 0) * 100);
+      const row = document.createElement("div");
+      row.className = "facet-row";
+      row.dataset.score = data.score;
+      row.innerHTML = `
+        <div>
+          <div class="facet-name" title="${facet}">${facet}</div>
+          <div class="conf-text">${conf}% confidence</div>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-fill" style="width:${pct}%;background:${color}"></div>
+        </div>
+        <div class="score-badge" style="color:${color}">${data.score}</div>`;
+      list.appendChild(row);
+    }
+  }
+
+  function filterFacets(filter, el) {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    el.classList.add("active");
+
+    const filtered = {};
+    for (const [facet, data] of Object.entries(allScores)) {
+      if (filter === "all") filtered[facet] = data;
+      else if (filter === "high" && data.score >= 4) filtered[facet] = data;
+      else if (filter === "mid" && data.score === 3) filtered[facet] = data;
+      else if (filter === "low" && data.score <= 2) filtered[facet] = data;
+    }
+    renderFacets(filtered);
+  }
+</script>
+</body>
+</html>
