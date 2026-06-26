@@ -33,7 +33,7 @@ def score_conversation(conversation_text, facets, batch_size=25, max_workers=2, 
             all_scores.update(scores)
             done += 1
             if progress_cb:
-                progress_cb(done, total_batches, scores)   # <-- now also passes this batch's scores
+                progress_cb(done, total_batches, scores)  
             else:
                 print(f"  Batch {done}/{total_batches} done")
 
@@ -49,7 +49,6 @@ def score_batch_with_retry(conversation_text, facets_batch, max_retries=4):
     for attempt in range(max_retries):
         try:
             result = score_batch(conversation_text, facets_batch)
-            # Fill in any facet the model silently skipped in its response
             for f in facets_batch:
                 if f not in result:
                     result[f] = {"score": 3, "confidence": 0.0}
@@ -120,22 +119,17 @@ Format:
 
     parsed = json.loads(raw)
 
-    # Build a lookup so we can match the model's returned key back to the
-    # EXACT canonical facet name, even if it mangled casing/whitespace/punctuation.
     canonical_lookup = {f.strip().lower(): f for f in facets_batch}
 
     result = {}
     for facet_raw, val in parsed.items():
-        # Normalize the model's key and try to match it to a real facet
         normalized = str(facet_raw).strip().lower()
         canonical_facet = canonical_lookup.get(normalized)
 
         if canonical_facet is None:
-            # The model invented a facet name that isn't in our list at all — discard it.
             print(f"    Discarding unrecognized facet key from model output: '{facet_raw}'")
             continue
 
-        # Extract score + confidence defensively, then CLAMP to valid ranges
         if isinstance(val, dict):
             raw_score = val.get("score", 3)
             raw_conf = val.get("confidence", 0.5)
@@ -150,13 +144,12 @@ Format:
             score = int(round(float(raw_score)))
         except (TypeError, ValueError):
             score = 3
-        score = max(1, min(5, score))   # hard clamp to 1-5, no matter what the model said
-
+        score = max(1, min(5, score))   
         try:
             confidence = float(raw_conf)
         except (TypeError, ValueError):
             confidence = 0.5
-        confidence = max(0.0, min(1.0, confidence))   # hard clamp to 0.0-1.0
+        confidence = max(0.0, min(1.0, confidence))   
 
         result[canonical_facet] = {"score": score, "confidence": confidence}
 
