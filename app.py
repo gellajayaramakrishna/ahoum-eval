@@ -12,7 +12,6 @@ load_dotenv()
 app = Flask(__name__)
 facets = load_facets()
 
-# In-memory job store: {job_id: {"status": ..., "done": int, "total": int, "result": ...}}
 jobs = {}
 
 @app.route("/")
