@@ -1,0 +1,85 @@
+{
+  "dataset": "GoEmotions test split",
+  "n_comments": 1000,
+  "facet_to_human_labels": {
+    "Joyfulness": [
+      "joy",
+      "amusement",
+      "excitement"
+    ],
+    "Hostility": [
+      "anger",
+      "annoyance",
+      "disgust"
+    ],
+    "Fearfulness: Fear of physical dangers": [
+      "fear",
+      "nervousness"
+    ],
+    "Depression: Feelings of sadness and hopelessness": [
+      "sadness",
+      "grief"
+    ],
+    "Compassion": [
+      "caring"
+    ],
+    "Disrespect": [
+      "disapproval",
+      "disgust"
+    ]
+  },
+  "lite_judge": {
+    "Joyfulness": {
+      "auroc": 0.686,
+      "positives": 83
+    },
+    "Hostility": {
+      "auroc": 0.811,
+      "positives": 101
+    },
+    "Fearfulness: Fear of physical dangers": {
+      "auroc": 0.913,
+      "positives": 18
+    },
+    "Depression: Feelings of sadness and hopelessness": {
+      "auroc": 0.823,
+      "positives": 38
+    },
+    "Compassion": {
+      "auroc": 0.675,
+      "positives": 24
+    },
+    "Disrespect": {
+      "auroc": 0.801,
+      "positives": 66
+    },
+    "_macro_auroc": 0.785
+  },
+  "reference_emotion_encoder_in_domain": {
+    "Joyfulness": {
+      "auroc": 0.943,
+      "positives": 83
+    },
+    "Hostility": {
+      "auroc": 0.859,
+      "positives": 101
+    },
+    "Fearfulness: Fear of physical dangers": {
+      "auroc": 0.958,
+      "positives": 18
+    },
+    "Depression: Feelings of sadness and hopelessness": {
+      "auroc": 0.893,
+      "positives": 38
+    },
+    "Compassion": {
+      "auroc": 0.917,
+      "positives": 24
+    },
+    "Disrespect": {
+      "auroc": 0.852,
+      "positives": 66
+    },
+    "_macro_auroc": 0.904
+  }
+}

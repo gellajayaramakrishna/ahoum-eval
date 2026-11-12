@@ -1,0 +1,43 @@
+{
+  "conversations": 50,
+  "facets": 399,
+  "expected_labels": 19950,
+  "raw_keys_returned": 19186,
+  "keys_exact_match": 17559,
+  "keys_repaired_by_canonicalizer": 1559,
+  "keys_unmatched_hallucinated": 68,
+  "key_mismatch_rate_of_returned": 0.0848,
+  "labels_covered_after_repair": 19103,
+  "missing_labels": 847,
+  "missing_rate": 0.0425,
+  "fallback_labels_conf0": 1930,
+  "fallback_rate": 0.0967,
+  "valid_labels": 17173,
+  "valid_rate": 0.8608,
+  "score_distribution_valid": {
+    "1": 5468,
+    "2": 3672,
+    "3": 3794,
+    "4": 3482,
+    "5": 757
+  },
+  "confidence_distinct_values": 23,
+  "facets_with_>=10_valid_labels": 362,
+  "near_constant_facets_std_lt_0.3": 62,
+  "always_score_1_facets_mean_le_1.1": 59,
+  "examples_always_1": [
+    "Alphabetical filing skills",
+    "Astrology: Rising sign is Scorpio",
+    "Aura-color perception",
+    "Bah\u00e1\u2019\u00ed spiritual metric: Ridv\u00e1n festival participation",
+    "Basophil count",
+    "Blog-subscriber count",
+    "Caffeine sensitivity gene",
+    "Choir participation years",
+    "Chromatin-accessibility score",
+    "Chronic pain presence",
+    "Dance rehearsal hours/week",
+    "Dance-cardio sessions"
+  ],
+  "median_facet_std": 0.576
+}

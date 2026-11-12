@@ -415,6 +415,26 @@
       text-align: right;
     }
 
+    .src-badge {
+      display: inline-block; font-family: var(--mono); font-size: 9px; letter-spacing: .04em;
+      padding: 1px 5px; border-radius: 3px; margin-left: 6px; text-transform: uppercase;
+      border: 1px solid #334155; color: var(--text-muted);
+    }
+    .src-badge.llm { color: #60a5fa; border-color: #1e40af; }
+    .src-badge.fallback { color: #f97316; border-color: #9a3412; }
+    .judge-row { display: flex; gap: 6px; margin-top: 14px; align-items: center; flex-wrap: wrap; }
+    .judge-row label { font-size: 11px; color: var(--text-muted); font-family: var(--mono); }
+    .judge-btn {
+      font-size: 12px; padding: 6px 10px; border-radius: 6px; cursor: pointer;
+      background: transparent; color: var(--text-muted); border: 1px solid #334155;
+    }
+    .judge-btn.active { color: #fff; border-color: var(--accent); background: rgba(59,130,246,.15); }
+    .judge-btn:disabled { opacity: .35; cursor: not-allowed; }
+    .info-line { font-family: var(--mono); font-size: 11px; color: var(--text-muted); margin-bottom: 10px; }
+    .metric-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .metric { border: 1px solid #1e293b; border-radius: 6px; padding: 8px 10px; }
+    .metric .v { font-family: var(--mono); font-size: 16px; font-weight: 600; }
+    .metric .l { font-size: 11px; color: var(--text-muted); }
     .conf-text {
       font-size: 10px;
       color: var(--text-dim);
@@ -633,16 +653,16 @@
     </div>
     <div class="logo-text">Ahoum <span>/ Conversation Evaluator</span></div>
   </div>
-  <div class="header-meta">Llama 3.1 · 399 Facets · Open-weights</div>
+  <div class="header-meta">Lite judge + Llama 3.1 8B · 399 Facets</div>
 </header>
 
 <main>
 
   <!-- HERO -->
   <div class="hero">
-    <div class="hero-label">Conversation Benchmark v1.0</div>
+    <div class="hero-label">Conversation Benchmark v3.0</div>
     <h1>Score any conversation across<br><em>399 distinct facets</em></h1>
-    <p>A production-ready evaluation system that analyses linguistic quality, pragmatics, safety, and emotion using open-weights LLMs. Scales to 5000+ facets without architectural changes.</p>
+    <p>A distilled CPU judge scores all 399 facets in ~40 ms; an uncertainty model sends only the facets it is unsure about to Llama 3.1 8B. Every number on this page is cross-validated.</p>
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-val">399</div>
@@ -655,13 +675,13 @@
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <div class="stat-val">8B</div>
-        <div class="stat-label">Model Params</div>
+        <div class="stat-val">~40ms</div>
+        <div class="stat-label">Lite judge, CPU</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <div class="stat-val">5000+</div>
-        <div class="stat-label">Scalable To</div>
+        <div class="stat-val">0.82</div>
+        <div class="stat-label">QWK vs Llama judge</div>
       </div>
     </div>
   </div>
@@ -676,7 +696,7 @@
           <span class="panel-title">Input</span>
           <div class="model-tag">
             <div class="model-dot"></div>
-            llama-3.1-8b-instant
+            <span id="modelTag">lite judge (CPU) + llama-3.1-8b</span>
           </div>
         </div>
         <div class="panel-body">
@@ -720,6 +740,12 @@ Person B: What do you mean? You've been doing great.
 Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
           </div>
 
+          <div class="judge-row">
+            <label>JUDGE</label>
+            <button class="judge-btn" id="judge-lite" onclick="setJudge('lite')" title="Distilled CPU judge, ~40 ms, no API">Lite</button>
+            <button class="judge-btn" id="judge-hybrid" onclick="setJudge('hybrid')" title="Lite judge + Llama on the 30% most uncertain facets">Hybrid</button>
+            <button class="judge-btn" id="judge-llm" onclick="setJudge('llm')" title="Llama 3.1 8B on every facet">Full LLM</button>
+          </div>
           <button class="btn" id="scoreBtn" onclick="scoreConversation()" style="margin-top:14px;">
             <svg class="btn-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm1 10H7V7h2v4zm0-6H7V3h2v2z"/></svg>
             Analyse Conversation
@@ -738,24 +764,25 @@ Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
           <div style="display:flex;gap:12px;align-items:flex-start;">
             <div style="font-family:var(--mono);font-size:11px;color:var(--accent);min-width:20px;padding-top:1px;">01</div>
             <div>
-              <div style="font-size:13px;font-weight:600;margin-bottom:2px;">Batch Processing</div>
-              <div style="font-size:12px;color:var(--text-muted);">Facets split into batches of 30 — no one-shot prompting. Scales to 5000+ facets without redesign.</div>
+              <div style="font-size:13px;font-weight:600;margin-bottom:2px;">Distilled Lite Judge</div>
+              <div style="font-size:12px;color:var(--text-muted);">LightGBM + GloVe + a GoEmotions-trained emotion encoder, distilled from 17k Llama-3.1-8B labels. Scores all 399 facets on CPU in ~40 ms.</div>
             </div>
           </div>
           <div style="display:flex;gap:12px;align-items:flex-start;">
             <div style="font-family:var(--mono);font-size:11px;color:var(--accent);min-width:20px;padding-top:1px;">02</div>
             <div>
-              <div style="font-size:13px;font-weight:600;margin-bottom:2px;">Open-weights Model</div>
-              <div style="font-size:12px;color:var(--text-muted);">Uses Llama 3.1 8B via Groq — open-weights, under 16B parameters, fast inference.</div>
+              <div style="font-size:13px;font-weight:600;margin-bottom:2px;">Uncertainty Routing</div>
+              <div style="font-size:12px;color:var(--text-muted);">A second model predicts where the lite judge is likely wrong. In Hybrid mode only those facets go to Llama 3.1 8B (batched, concurrent).</div>
             </div>
           </div>
           <div style="display:flex;gap:12px;align-items:flex-start;">
             <div style="font-family:var(--mono);font-size:11px;color:var(--accent);min-width:20px;padding-top:1px;">03</div>
             <div>
-              <div style="font-size:13px;font-weight:600;margin-bottom:2px;">Confidence Scores</div>
-              <div style="font-size:12px;color:var(--text-muted);">Every facet score includes a confidence value (0.0–1.0) indicating model certainty.</div>
+              <div style="font-size:13px;font-weight:600;margin-bottom:2px;">Measured, not assumed</div>
+              <div style="font-size:12px;color:var(--text-muted);">Cross-validated on held-out conversations and held-out facets. Numbers below are live from <span style="font-family:var(--mono)">/metrics</span>.</div>
             </div>
           </div>
+          <div class="metric-grid" id="metricGrid"></div>
         </div>
       </div>
     </div>
@@ -768,6 +795,7 @@ Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
           <span id="totalBadge" style="font-family:var(--mono);font-size:11px;color:var(--text-muted);"></span>
         </div>
         <div class="panel-body">
+          <div class="info-line" id="infoLine"></div>
           <div class="results-stats" id="statsRow"></div>
           <div class="filter-tabs" id="filterTabs">
             <button class="tab active" onclick="filterFacets('all', this)">All</button>
@@ -795,6 +823,49 @@ Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
 
 <script>
   let allScores = {};
+  let judgeMode = "lite";
+  let llmAvailable = false;
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  }
+
+  function setJudge(m) {
+    if (m !== "lite" && !llmAvailable) return;
+    judgeMode = m;
+    ["lite","hybrid","llm"].forEach(k => document.getElementById("judge-" + k).classList.toggle("active", k === m));
+  }
+
+  async function loadMeta() {
+    try {
+      const h = await (await fetch("/health")).json();
+      llmAvailable = !!h.llm_available;
+      ["hybrid","llm"].forEach(k => {
+        const b = document.getElementById("judge-" + k);
+        b.disabled = !llmAvailable;
+        if (!llmAvailable) b.title = "Set GROQ_API_KEY on the server to enable";
+      });
+      setJudge(h.default_mode || "lite");
+    } catch (e) { setJudge("lite"); }
+    try {
+      const m = await (await fetch("/metrics")).json();
+      const L = m.lite_metrics, E = m.emotion_metrics, T = m.teacher_audit;
+      const cards = [];
+      if (L) {
+        const a = L.A_unseen_conversations.lite_judge;
+        cards.push([a.QWK.toFixed(2), "QWK vs Llama judge (unseen convs)"]);
+        cards.push([(a.within1_acc*100).toFixed(1) + "%", "within ±1 of Llama"]);
+        cards.push([L.latency_399_facets_cpu_ms.median + " ms", "399 facets on CPU"]);
+        const r = L.routing_A.find(x => x.student_share === 0.5);
+        if (r) cards.push([r.hybrid_MAE_vs_teacher.toFixed(2), "MAE, Hybrid @ 50% LLM"]);
+      }
+      if (E) cards.push([E.test_macro_f1.toFixed(3), "GoEmotions macro-F1 (human labels)"]);
+      if (T) cards.push([(100*(1-T.valid_rate)).toFixed(1) + "%", "raw Llama labels unusable (audit)"]);
+      document.getElementById("metricGrid").innerHTML =
+        cards.map(c => `<div class="metric"><div class="v">${esc(c[0])}</div><div class="l">${esc(c[1])}</div></div>`).join("");
+    } catch (e) {}
+  }
+  document.addEventListener("DOMContentLoaded", loadMeta);
 
   // ───── GUIDED BUILDER STATE ─────
   let builderMode = "builder";   // "builder" or "raw"
@@ -859,7 +930,7 @@ Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
     const container = document.getElementById("speakerPills");
     container.innerHTML = speakers.map((name, i) => `
       <button class="speaker-pill ${i === activeSpeakerIdx ? 'active' : ''}" onclick="setActiveSpeaker(${i})">
-        ${name}
+        ${esc(name)}
       </button>
     `).join("");
   }
@@ -888,7 +959,7 @@ Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
     const container = document.getElementById("speakerPills");
     container.innerHTML = speakers.map((name, i) => `
       <button class="speaker-pill ${i === activeSpeakerIdx ? 'active' : ''}" onclick="setActiveSpeaker(${i})">
-        ${name}
+        ${esc(name)}
       </button>
     `).join("");
   }
@@ -900,8 +971,8 @@ Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
     } else {
       preview.innerHTML = turns.map((t, i) => `
         <div class="transcript-line">
-          <span class="speaker-label">${t.speaker}:</span>
-          <span class="line-text" id="line-text-${i}">${t.text}</span>
+          <span class="speaker-label">${esc(t.speaker)}:</span>
+          <span class="line-text" id="line-text-${i}">${esc(t.text)}</span>
           <span class="line-actions">
             <button onclick="editTurn(${i})">edit</button>
             <button onclick="deleteTurn(${i})">delete</button>
@@ -977,7 +1048,7 @@ Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
       const startRes = await fetch("/score", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ conversation: conv })
+        body: JSON.stringify({ conversation: conv, mode: judgeMode })
       });
       const startData = await startRes.json();
       if (startData.error) { status.textContent = "Error: " + startData.error; return; }
@@ -991,6 +1062,12 @@ Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
 
       allScores = data.result.scores;
       renderResults(data.result.scores, data.result.total);
+      const info = data.result.info || {};
+      const src = Object.values(allScores).reduce((a, v) => { a[v.source || "llm"] = (a[v.source || "llm"] || 0) + 1; return a; }, {});
+      let line = `mode=${info.mode} · ${info.total_ms} ms · lite ${src.lite || 0} · llm ${src.llm || 0}`;
+      if (src.fallback) line += ` · fallback ${src.fallback}`;
+      if (info.notes && info.notes.length) line += " · " + info.notes.join("; ");
+      document.getElementById("infoLine").textContent = line;
       status.innerHTML = `<div style="width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0"></div> Complete — ${data.result.total} facets scored`;
 
     } catch(e) {
@@ -1010,7 +1087,7 @@ Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
           const job = await res.json();
 
           if (job.status === "running") {
-            const pct = job.total ? `${job.done}/${job.total} batches` : "warming up...";
+            const pct = job.total ? `${job.done}/${job.total} LLM batches` : "lite judge running...";
             statusEl.innerHTML = `<div class="status-dot"></div> Scoring — ${pct}`;
           } else if (job.status === "complete") {
             clearInterval(interval);
@@ -1064,8 +1141,8 @@ Person A: Everyone thinks I'm doing great but I feel like a fraud."></textarea>
       row.dataset.score = data.score;
       row.innerHTML = `
         <div>
-          <div class="facet-name" title="${facet}">${facet}</div>
-          <div class="conf-text">${conf}% confidence</div>
+          <div class="facet-name" title="${esc(facet)}">${esc(facet)}</div>
+          <div class="conf-text">${conf}% confidence<span class="src-badge ${esc(data.source || 'llm')}">${esc(data.source || 'llm')}</span></div>
         </div>
         <div class="bar-wrap">
           <div class="bar-fill" style="width:${pct}%;background:${color}"></div>

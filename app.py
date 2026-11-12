@@ -1,71 +1,122 @@
-import os
 import json
-import uuid
+import os
 import threading
-from flask import Flask, render_template, request, jsonify
-from facets import load_facets
-from scorer import score_conversation
+import time
+import traceback
+import uuid
+from collections import OrderedDict
+
 from dotenv import load_dotenv
+from flask import Flask, jsonify, render_template, request
+
+from facets import load_facets
+from hybrid import default_mode, get_lite_judge, score
+from scorer import MODEL, llm_available
 
 load_dotenv()
 
 app = Flask(__name__)
 facets = load_facets()
+ROOT = os.path.dirname(os.path.abspath(__file__))
+MAX_CHARS = 20_000
+MAX_JOBS = 200
+VALID_MODES = {"lite", "hybrid", "llm"}
 
-jobs = {}
+jobs = OrderedDict()
+jobs_lock = threading.Lock()
+
+# load the CPU judge at boot so the first request is fast
+try:
+    get_lite_judge()
+    LITE_OK = True
+except Exception:  # noqa: BLE001
+    traceback.print_exc()
+    LITE_OK = False
+
+
+def _new_job():
+    job_id = str(uuid.uuid4())
+    with jobs_lock:
+        jobs[job_id] = {"status": "running", "done": 0, "total": 0, "result": None, "error": None,
+                        "partial_results": {}, "stats": {"avg": 0, "high": 0, "low": 0, "count": 0},
+                        "created": time.time()}
+        while len(jobs) > MAX_JOBS:          # bounded memory on a long-running server
+            jobs.popitem(last=False)
+    return job_id
+
+
+def _summary(scores):
+    vals = [v["score"] for v in scores.values()]
+    if not vals:
+        return {"avg": 0, "high": 0, "low": 0, "count": 0}
+    return {"avg": round(sum(vals) / len(vals), 2), "high": max(vals), "low": min(vals), "count": len(vals)}
+
+
+def _validate(data):
+    conversation = (data or {}).get("conversation", "").strip()
+    if not conversation:
+        return None, None, None, ("No conversation provided", 400)
+    if len(conversation) > MAX_CHARS:
+        return None, None, None, (f"Conversation too long (max {MAX_CHARS} characters)", 413)
+    mode = (data.get("mode") or default_mode()).lower()
+    if mode not in VALID_MODES:
+        return None, None, None, (f"mode must be one of {sorted(VALID_MODES)}", 400)
+    try:
+        share = float(data.get("llm_share", 0.3))
+    except (TypeError, ValueError):
+        share = 0.3
+    return conversation, mode, min(1.0, max(0.0, share)), None
+
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
+
+@app.route("/health")
+def health():
+    return jsonify({"ok": True, "lite_model": LITE_OK, "llm_available": llm_available(), "llm_model": MODEL,
+                    "facets": len(facets), "default_mode": default_mode()})
+
+
 @app.route("/score", methods=["POST"])
-def score():
-    """Starts scoring in a background thread and immediately returns a job_id.
-    The frontend polls /status/<job_id> for progress instead of waiting on
-    one long request (which would time out on a hosted server)."""
-    data = request.json
-    conversation = data.get("conversation", "").strip()
-    if not conversation:
-        return jsonify({"error": "No conversation provided"}), 400
+def score_async():
+    """Starts a background job and returns a job_id; poll /status/<job_id>."""
+    conversation, mode, share, err = _validate(request.json)
+    if err:
+        return jsonify({"error": err[0]}), err[1]
+    job_id = _new_job()
 
-    job_id = str(uuid.uuid4())
-    jobs[job_id] = {
-        "status": "running", "done": 0, "total": 0,
-        "result": None, "error": None,
-        "partial_results": {}, "stats": {"avg": 0, "high": 0, "low": 0, "count": 0},
-    }
-
-    def run_job():
+    def run():
+        job = jobs[job_id]
         try:
             def progress_cb(done, total, batch_scores):
-                jobs[job_id]["done"] = done
-                jobs[job_id]["total"] = total
-                # Append this batch's scores to the running partial results
-                jobs[job_id]["partial_results"].update(batch_scores)
-                # Recompute running avg/high/low over everything scored so far
-                vals = [v["score"] for v in jobs[job_id]["partial_results"].values()]
-                if vals:
-                    jobs[job_id]["stats"] = {
-                        "avg": round(sum(vals) / len(vals), 2),
-                        "high": max(vals),
-                        "low": min(vals),
-                        "count": len(vals),
-                    }
+                job["done"], job["total"] = done, total
+                job["partial_results"].update(batch_scores)
+                job["stats"] = _summary(job["partial_results"])
 
-            scores = score_conversation(conversation, facets, progress_cb=progress_cb)
-            sorted_scores = dict(
-                sorted(scores.items(), key=lambda x: x[1]["score"], reverse=True)
-            )
-            jobs[job_id]["status"] = "complete"
-            jobs[job_id]["result"] = {"scores": sorted_scores, "total": len(sorted_scores)}
-        except Exception as e:
-            import traceback
-            traceback.print_exc()   # prints the full error to your terminal
-            jobs[job_id]["status"] = "error"
-            jobs[job_id]["error"] = str(e)
+            scores, info = score(conversation, facets, mode=mode, llm_share=share, progress_cb=progress_cb)
+            ordered = dict(sorted(scores.items(), key=lambda x: x[1]["score"], reverse=True))
+            job["result"] = {"scores": ordered, "total": len(ordered), "info": info}
+            job["status"] = "complete"
+        except Exception as e:  # noqa: BLE001
+            traceback.print_exc()
+            job["status"], job["error"] = "error", str(e)
 
-    threading.Thread(target=run_job, daemon=True).start()
-    return jsonify({"job_id": job_id})
+    threading.Thread(target=run, daemon=True).start()
+    return jsonify({"job_id": job_id, "mode": mode})
+
+
+@app.route("/api/score", methods=["POST"])
+def score_sync():
+    """Synchronous scoring (handy for lite mode / scripts): returns scores directly."""
+    conversation, mode, share, err = _validate(request.json)
+    if err:
+        return jsonify({"error": err[0]}), err[1]
+    sel = request.json.get("facets")
+    fs = [f for f in sel if f in set(facets)] if isinstance(sel, list) else facets
+    scores, info = score(conversation, fs, mode=mode, llm_share=share)
+    return jsonify({"scores": scores, "total": len(scores), "info": info})
 
 
 @app.route("/status/<job_id>")
@@ -76,16 +127,27 @@ def status(job_id):
     return jsonify(job)
 
 
+@app.route("/metrics")
+def metrics():
+    """Offline evaluation numbers (generated by scripts/*.py) for the dashboard."""
+    out = {}
+    for name in ("teacher_audit", "lite_metrics", "emotion_metrics", "teacher_emotion_validity"):
+        p = os.path.join(ROOT, "reports", f"{name}.json")
+        if os.path.exists(p):
+            with open(p) as f:
+                out[name] = json.load(f)
+    return jsonify(out)
+
+
 @app.route("/results")
 def results():
     try:
-        with open("results/all_scores.json", "r") as f:
+        with open(os.path.join(ROOT, "results", "all_scores.json")) as f:
             data = json.load(f)
         return jsonify({"total": len(data), "results": data})
-    except Exception:
+    except Exception:  # noqa: BLE001
         return jsonify({"total": 0, "results": []})
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port, debug=False)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=False)

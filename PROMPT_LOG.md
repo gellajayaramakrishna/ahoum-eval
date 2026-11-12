@@ -86,3 +86,22 @@ on systems without local GPU support.
 - Model: llama-3.1-8b-instant (Meta open-weights license)
 - No one-shot prompting anywhere — full batched architecture throughout
 - Confidence outputs included for every facet score
+
+---
+
+## v3 — Validation, distillation and routing (Nov 2026)
+
+Built with Claude (Anthropic) as a pair-programmer. Claude wrote most of the v3 code and ran the experiments.
+I set the goal: answer the interview criticism that Ahoum was "just prompting an AI" by measuring the judge
+and training a model on its outputs.
+
+What changed and why:
+- Audited the stored Llama outputs, which showed 13.9% unusable labels and 8.5% mangled facet keys. This led to the
+  facet-name cleaning, `FacetMatcher`, JSON mode, the targeted re-ask, and explicit fallbacks in `scorer.py`.
+- Trained a GoEmotions emotion encoder (macro-F1 0.458) and used it to check the LLM judge's emotion
+  facets against human-grounded signal.
+- Distilled the judge into a CPU LightGBM model and added an error model for uncertainty routing (Hybrid mode).
+- Rejected along the way, with CV numbers in my notes: bilinear GloVe×GloVe ridge (within-facet ρ ≈ 0.05),
+  reduced-rank regression on emotion profiles (≈ 0.12), WordLlama embeddings (weak similarity on facet names).
+- Out-of-domain human-label test exposed a sub-chance Joyfulness score (0.47). Fixed with a semantic prior
+  on the emotion head (0.69); prior strength chosen on CV, not on the test set.

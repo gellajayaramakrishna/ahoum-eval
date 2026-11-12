@@ -1,0 +1,155 @@
+{
+  "data": {
+    "valid_labels": 17173,
+    "conversations": 50,
+    "facets": 389
+  },
+  "A_unseen_conversations": {
+    "global_mean_baseline": {
+      "n": 17173,
+      "MAE": 1.1058,
+      "RMSE": 1.2468,
+      "pearson": -0.0382,
+      "spearman": -0.0326,
+      "QWK": 0.0,
+      "exact_acc": 0.2138,
+      "within1_acc": 0.7532,
+      "within_facet_spearman": null,
+      "within_conv_spearman": null
+    },
+    "facet_mean_baseline": {
+      "n": 17173,
+      "MAE": 0.4767,
+      "RMSE": 0.692,
+      "pearson": 0.8317,
+      "spearman": 0.8373,
+      "QWK": 0.8049,
+      "exact_acc": 0.6279,
+      "within1_acc": 0.9532,
+      "within_facet_spearman": null,
+      "within_conv_spearman": 0.8434
+    },
+    "lite_judge": {
+      "n": 17173,
+      "MAE": 0.4634,
+      "RMSE": 0.6645,
+      "pearson": 0.8465,
+      "spearman": 0.8509,
+      "QWK": 0.8212,
+      "exact_acc": 0.6414,
+      "within1_acc": 0.9613,
+      "within_facet_spearman": 0.1523,
+      "within_conv_spearman": 0.8541
+    },
+    "facets_in_within_facet_metric": 323,
+    "within_facet_spearman_emotion_facets": {
+      "facets": 15,
+      "lite_judge": 0.3211
+    },
+    "within_facet_spearman_high_variance_facets": {
+      "facets": 42,
+      "teacher_std_threshold": 1.0,
+      "lite_judge": 0.3149
+    }
+  },
+  "routing_A": [
+    {
+      "student_share": 0.5,
+      "llm_share": 0.5,
+      "MAE_on_student_rows": 0.2719,
+      "MAE_random_rows_same_size": 0.4675,
+      "within1_on_student_rows": 0.9858,
+      "hybrid_MAE_vs_teacher": 0.1359
+    },
+    {
+      "student_share": 0.6,
+      "llm_share": 0.4,
+      "MAE_on_student_rows": 0.3095,
+      "MAE_random_rows_same_size": 0.4616,
+      "within1_on_student_rows": 0.9839,
+      "hybrid_MAE_vs_teacher": 0.1857
+    },
+    {
+      "student_share": 0.7,
+      "llm_share": 0.3,
+      "MAE_on_student_rows": 0.343,
+      "MAE_random_rows_same_size": 0.4647,
+      "within1_on_student_rows": 0.9826,
+      "hybrid_MAE_vs_teacher": 0.2401
+    },
+    {
+      "student_share": 0.8,
+      "llm_share": 0.2,
+      "MAE_on_student_rows": 0.3739,
+      "MAE_random_rows_same_size": 0.463,
+      "within1_on_student_rows": 0.9803,
+      "hybrid_MAE_vs_teacher": 0.2991
+    },
+    {
+      "student_share": 0.9,
+      "llm_share": 0.1,
+      "MAE_on_student_rows": 0.4112,
+      "MAE_random_rows_same_size": 0.4632,
+      "within1_on_student_rows": 0.9736,
+      "hybrid_MAE_vs_teacher": 0.3701
+    },
+    {
+      "student_share": 1.0,
+      "llm_share": 0.0,
+      "MAE_on_student_rows": 0.4634,
+      "MAE_random_rows_same_size": 0.4634,
+      "within1_on_student_rows": 0.9613,
+      "hybrid_MAE_vs_teacher": 0.4634
+    }
+  ],
+  "uncertainty_vs_error_spearman": 0.6433,
+  "B_unseen_conversations_and_facets": {
+    "global_mean_baseline": {
+      "n": 3431,
+      "MAE": 1.1121,
+      "RMSE": 1.2518,
+      "pearson": -0.0484,
+      "spearman": -0.0533,
+      "QWK": 0.0,
+      "exact_acc": 0.2113,
+      "within1_acc": 0.7537,
+      "within_conv_spearman": null
+    },
+    "knn_facet_prior_baseline": {
+      "n": 3431,
+      "MAE": 0.8924,
+      "RMSE": 1.0819,
+      "pearson": 0.5119,
+      "spearman": 0.5159,
+      "QWK": 0.4248,
+      "exact_acc": 0.3267,
+      "within1_acc": 0.8365,
+      "within_conv_spearman": 0.5222
+    },
+    "lite_judge_zero_shot": {
+      "n": 3431,
+      "MAE": 0.8791,
+      "RMSE": 1.0722,
+      "pearson": 0.5271,
+      "spearman": 0.5333,
+      "QWK": 0.4404,
+      "exact_acc": 0.3296,
+      "within1_acc": 0.8438,
+      "within_conv_spearman": 0.5424
+    }
+  },
+  "final_model": {
+    "n_train_rows": 17173,
+    "n_conversations": 50,
+    "n_facets": 389,
+    "n_features": 257,
+    "fit_seconds": 49.4,
+    "file_MB": 2.08
+  },
+  "latency_399_facets_cpu_ms": {
+    "median": 40.1,
+    "p95": 46.2,
+    "cpu_threads": 2
+  },
+  "total_runtime_s": 475.0
+}

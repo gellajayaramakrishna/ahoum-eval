@@ -1,0 +1,156 @@
+{
+  "what": "Spearman across conversations between LLM-judge facet score and GoEmotions-encoder probability",
+  "facets_tested": 14,
+  "mean_spearman": 0.348,
+  "median_spearman": 0.401,
+  "facets_significant_p_lt_0.05": 9,
+  "per_facet": [
+    {
+      "facet": "Joyfulness",
+      "emotions": [
+        "joy",
+        "amusement",
+        "excitement"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.494,
+      "perm_p": 0.0
+    },
+    {
+      "facet": "Merriness",
+      "emotions": [
+        "joy",
+        "amusement"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.492,
+      "perm_p": 0.0
+    },
+    {
+      "facet": "Enthusiasm",
+      "emotions": [
+        "excitement",
+        "joy"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.375,
+      "perm_p": 0.012
+    },
+    {
+      "facet": "Hostility",
+      "emotions": [
+        "anger",
+        "annoyance",
+        "disgust"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.446,
+      "perm_p": 0.002
+    },
+    {
+      "facet": "Irritability",
+      "emotions": [
+        "annoyance",
+        "anger"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.408,
+      "perm_p": 0.006
+    },
+    {
+      "facet": "Fearfulness: Fear of physical dangers",
+      "emotions": [
+        "fear",
+        "nervousness"
+      ],
+      "n_conversations": 46,
+      "spearman": 0.128,
+      "perm_p": 0.414
+    },
+    {
+      "facet": "Depression: Feelings of sadness and hopelessness",
+      "emotions": [
+        "sadness",
+        "grief",
+        "disappointment"
+      ],
+      "n_conversations": 49,
+      "spearman": 0.427,
+      "perm_p": 0.008
+    },
+    {
+      "facet": "Moroseness",
+      "emotions": [
+        "sadness",
+        "disappointment",
+        "grief"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.155,
+      "perm_p": 0.276
+    },
+    {
+      "facet": "Desperation",
+      "emotions": [
+        "fear",
+        "sadness",
+        "nervousness"
+      ],
+      "n_conversations": 49,
+      "spearman": 0.199,
+      "perm_p": 0.154
+    },
+    {
+      "facet": "Compassion",
+      "emotions": [
+        "caring",
+        "love"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.249,
+      "perm_p": 0.066
+    },
+    {
+      "facet": "Warmheartedness",
+      "emotions": [
+        "caring",
+        "love",
+        "gratitude"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.394,
+      "perm_p": 0.006
+    },
+    {
+      "facet": "Discontentment",
+      "emotions": [
+        "disappointment",
+        "disapproval",
+        "annoyance"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.519,
+      "perm_p": 0.0
+    },
+    {
+      "facet": "Disrespect",
+      "emotions": [
+        "disapproval",
+        "disgust",
+        "anger"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.53,
+      "perm_p": 0.0
+    },
+    {
+      "facet": "Psychological construct: Hope scale",
+      "emotions": [
+        "optimism"
+      ],
+      "n_conversations": 50,
+      "spearman": 0.054,
+      "perm_p": 0.7
+    }
+  ]
+}

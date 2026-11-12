@@ -1,0 +1,154 @@
+{
+  "dataset": "GoEmotions (Demszky et al., 2020) official splits",
+  "n_train": 43410,
+  "n_test": 5427,
+  "labels": 28,
+  "test_macro_f1": 0.4583,
+  "test_micro_f1": 0.5364,
+  "test_macro_auroc": 0.8991,
+  "reference_bert_base_macro_f1_from_paper": 0.46,
+  "per_label": {
+    "admiration": {
+      "f1": 0.63,
+      "auroc": 0.92,
+      "support": 504
+    },
+    "amusement": {
+      "f1": 0.789,
+      "auroc": 0.976,
+      "support": 264
+    },
+    "anger": {
+      "f1": 0.455,
+      "auroc": 0.899,
+      "support": 198
+    },
+    "annoyance": {
+      "f1": 0.28,
+      "auroc": 0.802,
+      "support": 320
+    },
+    "approval": {
+      "f1": 0.294,
+      "auroc": 0.777,
+      "support": 351
+    },
+    "caring": {
+      "f1": 0.293,
+      "auroc": 0.87,
+      "support": 135
+    },
+    "confusion": {
+      "f1": 0.401,
+      "auroc": 0.909,
+      "support": 153
+    },
+    "curiosity": {
+      "f1": 0.519,
+      "auroc": 0.937,
+      "support": 284
+    },
+    "desire": {
+      "f1": 0.361,
+      "auroc": 0.938,
+      "support": 83
+    },
+    "disappointment": {
+      "f1": 0.25,
+      "auroc": 0.78,
+      "support": 151
+    },
+    "disapproval": {
+      "f1": 0.323,
+      "auroc": 0.842,
+      "support": 267
+    },
+    "disgust": {
+      "f1": 0.45,
+      "auroc": 0.925,
+      "support": 123
+    },
+    "embarrassment": {
+      "f1": 0.405,
+      "auroc": 0.871,
+      "support": 37
+    },
+    "excitement": {
+      "f1": 0.352,
+      "auroc": 0.894,
+      "support": 103
+    },
+    "fear": {
+      "f1": 0.595,
+      "auroc": 0.946,
+      "support": 78
+    },
+    "gratitude": {
+      "f1": 0.912,
+      "auroc": 0.993,
+      "support": 352
+    },
+    "grief": {
+      "f1": 0.25,
+      "auroc": 0.998,
+      "support": 6
+    },
+    "joy": {
+      "f1": 0.563,
+      "auroc": 0.926,
+      "support": 161
+    },
+    "love": {
+      "f1": 0.762,
+      "auroc": 0.98,
+      "support": 238
+    },
+    "nervousness": {
+      "f1": 0.244,
+      "auroc": 0.921,
+      "support": 23
+    },
+    "optimism": {
+      "f1": 0.55,
+      "auroc": 0.904,
+      "support": 186
+    },
+    "pride": {
+      "f1": 0.444,
+      "auroc": 0.895,
+      "support": 16
+    },
+    "realization": {
+      "f1": 0.308,
+      "auroc": 0.776,
+      "support": 145
+    },
+    "relief": {
+      "f1": 0.125,
+      "auroc": 0.885,
+      "support": 11
+    },
+    "remorse": {
+      "f1": 0.638,
+      "auroc": 0.971,
+      "support": 56
+    },
+    "sadness": {
+      "f1": 0.494,
+      "auroc": 0.911,
+      "support": 156
+    },
+    "surprise": {
+      "f1": 0.489,
+      "auroc": 0.919,
+      "support": 141
+    },
+    "neutral": {
+      "f1": 0.657,
+      "auroc": 0.81,
+      "support": 1787
+    }
+  },
+  "train_seconds": 131.3,
+  "model_MB": 26.35
+}
